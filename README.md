@@ -24,13 +24,13 @@ Antes de comenzar, asegúrate de tener instalado:
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tuusuario/juego-preguntas-programacion.git
+git clone https://github.com/AlejoGomezQ/Hybrid_App.git
 ```
 
 2. Navega al directorio del proyecto:
 
 ```bash
-cd hybrid-app
+cd Hybrid_App
 ```
 
 3. Instala las dependencias:
