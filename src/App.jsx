@@ -1,12 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import './App.css'
+import LoginPage from "./pages/Login";
+import GameModesPage from "./pages/GameModes";
+import GamePage from "./pages/Game";
 
 function App() {
   return (
-    <>
-      <div>
-        <h1 className='text-3xl text-red-500'>Hybrid App</h1>
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/game-modes" element={<GameModesPage />} />
+        <Route path="/game/:modeId" element={<GamePage />} />
+      </Routes>
+    </Router>
   )
 }
 
