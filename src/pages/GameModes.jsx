@@ -1,21 +1,47 @@
-import { IconCSS, IconHTML, IconJS, IconNetworks, IconPython, IconSQL } from "../components/Icons"
+import { useState } from "react";
+import { IconJS, IconPython, IconSQL } from "../components/Icons"
 import TopicButton from "../components/TopicButton"
 
+import data from "../db/question.json";
+import { useEffect } from "react";
+
 const GameModesPage = () => {
+    const [categories, setCategories] = useState([]);
+
+    // Cargar las categorías al montar el componente
+    useEffect(() => {
+        setCategories(data.categorias);
+    }, []);
+
+    // Función para obtener el ícono correspondiente a cada categoría
+    const getIconForCategory = (categoryName) => {
+        switch (categoryName) {
+            case "Frontend":
+                return <IconJS />;
+            case "Backend":
+                return <IconPython />;
+            case "Bases de datos":
+                return <IconSQL />;
+            default:
+                return null;
+        }
+    };
+
     return (
         <main className="max-w-md mx-auto px-4 py-6">
-            <h1 className="mb-6 text-xl font-bold text-center">ELIGE UN TEMA</h1>
+            <h1 className="mb-6 text-xl font-bold text-center">Elige una categoria</h1>
 
-            <div className="space-y-3">
-                <TopicButton icon={<IconSQL />} name="SQL" />
-                <TopicButton icon={<IconPython />} name="PYT" />
-                <TopicButton icon={<IconNetworks />} name="REDES" />
-                <TopicButton icon={<IconJS />} name="JS" />
-                <TopicButton icon={<IconHTML />} name="HTML" />
-                <TopicButton icon={<IconCSS />} name="CSS" />
+            <div className="flex flex-col space-y-3 gap-y-3">
+                {categories.map((category) => (
+                    <TopicButton
+                        key={category.nombre}
+                        icon={getIconForCategory(category.nombre)}
+                        name={category.nombre}
+                    />
+                ))}
             </div>
         </main>
-    )
+    );
 }
 
 export default GameModesPage
