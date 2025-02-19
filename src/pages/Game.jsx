@@ -1,6 +1,6 @@
 const GamePage = () => {
     return (
-        <div>
+        <div className="text-purple-500">
             Game
         </div>
     )
