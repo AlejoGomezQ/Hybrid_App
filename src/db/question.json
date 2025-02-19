@@ -1,0 +1,289 @@
+{
+    "categorias": [
+      {
+        "nombre": "Frontend",
+        "preguntas": [
+          {
+            "id": 1,
+            "pregunta": "¿Qué lenguaje se utiliza principalmente para estilizar páginas web?",
+            "opciones": ["JavaScript", "CSS", "HTML", "Python"],
+            "correcta": "CSS"
+          },
+          {
+            "id": 2,
+            "pregunta": "¿Qué framework de JavaScript es desarrollado por Google?",
+            "opciones": ["React", "Vue", "Angular", "Svelte"],
+            "correcta": "Angular"
+          },
+          {
+            "id": 3,
+            "pregunta": "¿Qué etiqueta HTML se utiliza para crear un enlace?",
+            "opciones": ["<link>", "<a>", "<href>", "<url>"],
+            "correcta": "<a>"
+          },
+          {
+            "id": 4,
+            "pregunta": "¿Qué propiedad CSS se utiliza para cambiar el color del texto?",
+            "opciones": ["text-color", "font-color", "color", "text-style"],
+            "correcta": "color"
+          },
+          {
+            "id": 5,
+            "pregunta": "¿Qué método se utiliza para agregar un elemento al final de un array en JavaScript?",
+            "opciones": ["push()", "pop()", "shift()", "unshift()"],
+            "correcta": "push()"
+          },
+          {
+            "id": 6,
+            "pregunta": "¿Qué es un 'callback' en JavaScript?",
+            "opciones": ["Una función que se pasa como argumento a otra función", "Un tipo de bucle", "Un método para manipular el DOM", "Una librería de JavaScript"],
+            "correcta": "Una función que se pasa como argumento a otra función"
+          },
+          {
+            "id": 7,
+            "pregunta": "¿Qué es React?",
+            "opciones": ["Un lenguaje de programación", "Una biblioteca de JavaScript para construir interfaces de usuario", "Un framework de backend", "Un sistema de bases de datos"],
+            "correcta": "Una biblioteca de JavaScript para construir interfaces de usuario"
+          },
+          {
+            "id": 8,
+            "pregunta": "¿Qué es el Virtual DOM en React?",
+            "opciones": ["Una copia del DOM real en memoria", "Un tipo de base de datos", "Un lenguaje de programación", "Un framework de backend"],
+            "correcta": "Una copia del DOM real en memoria"
+          },
+          {
+            "id": 9,
+            "pregunta": "¿Qué es JSX?",
+            "opciones": ["Un lenguaje de programación", "Una extensión de sintaxis para JavaScript", "Un framework de backend", "Un sistema de bases de datos"],
+            "correcta": "Una extensión de sintaxis para JavaScript"
+          },
+          {
+            "id": 10,
+            "pregunta": "¿Qué es un 'hook' en React?",
+            "opciones": ["Una función que te permite usar estado y otras características de React en componentes funcionales", "Un tipo de bucle", "Un método para manipular el DOM", "Una librería de JavaScript"],
+            "correcta": "Una función que te permite usar estado y otras características de React en componentes funcionales"
+          },
+          {
+            "id": 11,
+            "pregunta": "¿Qué es el 'state' en React?",
+            "opciones": ["Un objeto que almacena los valores de las propiedades de un componente", "Un método para manipular el DOM", "Una librería de JavaScript", "Un tipo de bucle"],
+            "correcta": "Un objeto que almacena los valores de las propiedades de un componente"
+          },
+          {
+            "id": 12,
+            "pregunta": "¿Qué es el 'props' en React?",
+            "opciones": ["Un objeto que almacena los valores de las propiedades de un componente", "Un método para manipular el DOM", "Una librería de JavaScript", "Un tipo de bucle"],
+            "correcta": "Un objeto que almacena los valores de las propiedades de un componente"
+          },
+          {
+            "id": 13,
+            "pregunta": "¿Qué es el 'context' en React?",
+            "opciones": ["Un objeto que almacena los valores de las propiedades de un componente", "Un método para manipular el DOM", "Una librería de JavaScript", "Un tipo de bucle"],
+            "correcta": "Un objeto que almacena los valores de las propiedades de un componente"
+          },
+          {
+            "id": 14,
+            "pregunta": "¿Qué es el 'lifecycle' en React?",
+            "opciones": ["Un objeto que almacena los valores de las propiedades de un componente", "Un método para manipular el DOM", "Una librería de JavaScript", "Un tipo de bucle"],
+            "correcta": "Un objeto que almacena los valores de las propiedades de un componente"
+          },
+          {
+            "id": 15,
+            "pregunta": "¿Qué es el 'render' en React?",
+            "opciones": ["Un objeto que almacena los valores de las propiedades de un componente", "Un método para manipular el DOM", "Una librería de JavaScript", "Un tipo de bucle"],
+            "correcta": "Un objeto que almacena los valores de las propiedades de un componente"
+          }
+        ]
+      },
+      {
+        "nombre": "Backend",
+        "preguntas": [
+          {
+            "id": 16,
+            "pregunta": "¿Qué es un API?",
+            "opciones": ["Un lenguaje de programación", "Una interfaz que permite la comunicación entre diferentes software", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Una interfaz que permite la comunicación entre diferentes software"
+          },
+          {
+            "id": 17,
+            "pregunta": "¿Qué es Node.js?",
+            "opciones": ["Un lenguaje de programación", "Un entorno de ejecución para JavaScript", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un entorno de ejecución para JavaScript"
+          },
+          {
+            "id": 18,
+            "pregunta": "¿Qué es Express.js?",
+            "opciones": ["Un lenguaje de programación", "Un framework de backend para Node.js", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un framework de backend para Node.js"
+          },
+          {
+            "id": 19,
+            "pregunta": "¿Qué es un 'middleware' en Express.js?",
+            "opciones": ["Un lenguaje de programación", "Una función que tiene acceso al objeto de solicitud (req), al objeto de respuesta (res) y a la siguiente función de middleware en el ciclo de solicitud/respuesta", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Una función que tiene acceso al objeto de solicitud (req), al objeto de respuesta (res) y a la siguiente función de middleware en el ciclo de solicitud/respuesta"
+          },
+          {
+            "id": 20,
+            "pregunta": "¿Qué es un 'endpoint' en una API?",
+            "opciones": ["Un lenguaje de programación", "Una URL que permite acceder a un recurso específico", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Una URL que permite acceder a un recurso específico"
+          },
+          {
+            "id": 21,
+            "pregunta": "¿Qué es un 'ORM'?",
+            "opciones": ["Un lenguaje de programación", "Una técnica que permite manipular bases de datos usando objetos", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Una técnica que permite manipular bases de datos usando objetos"
+          },
+          {
+            "id": 22,
+            "pregunta": "¿Qué es un 'microservicio'?",
+            "opciones": ["Un lenguaje de programación", "Un estilo de arquitectura que estructura una aplicación como una colección de servicios", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un estilo de arquitectura que estructura una aplicación como una colección de servicios"
+          },
+          {
+            "id": 23,
+            "pregunta": "¿Qué es un 'REST API'?",
+            "opciones": ["Un lenguaje de programación", "Un estilo de arquitectura para diseñar redes de comunicación", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un estilo de arquitectura para diseñar redes de comunicación"
+          },
+          {
+            "id": 24,
+            "pregunta": "¿Qué es un 'GraphQL'?",
+            "opciones": ["Un lenguaje de programación", "Un lenguaje de consulta para APIs", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un lenguaje de consulta para APIs"
+          },
+          {
+            "id": 25,
+            "pregunta": "¿Qué es un 'WebSocket'?",
+            "opciones": ["Un lenguaje de programación", "Un protocolo de comunicación que permite una conexión bidireccional entre un cliente y un servidor", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un protocolo de comunicación que permite una conexión bidireccional entre un cliente y un servidor"
+          },
+          {
+            "id": 26,
+            "pregunta": "¿Qué es un 'JWT'?",
+            "opciones": ["Un lenguaje de programación", "Un estándar para crear tokens de acceso", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un estándar para crear tokens de acceso"
+          },
+          {
+            "id": 27,
+            "pregunta": "¿Qué es un 'Docker'?",
+            "opciones": ["Un lenguaje de programación", "Una plataforma para desarrollar, enviar y ejecutar aplicaciones en contenedores", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Una plataforma para desarrollar, enviar y ejecutar aplicaciones en contenedores"
+          },
+          {
+            "id": 28,
+            "pregunta": "¿Qué es un 'Kubernetes'?",
+            "opciones": ["Un lenguaje de programación", "Un sistema de orquestación de contenedores", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un sistema de orquestación de contenedores"
+          },
+          {
+            "id": 29,
+            "pregunta": "¿Qué es un 'CI/CD'?",
+            "opciones": ["Un lenguaje de programación", "Un conjunto de prácticas para automatizar la integración y entrega de software", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un conjunto de prácticas para automatizar la integración y entrega de software"
+          },
+          {
+            "id": 30,
+            "pregunta": "¿Qué es un 'Load Balancer'?",
+            "opciones": ["Un lenguaje de programación", "Un dispositivo que distribuye el tráfico de red entre varios servidores", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un dispositivo que distribuye el tráfico de red entre varios servidores"
+          }
+        ]
+      },
+      {
+        "nombre": "Bases de datos",
+        "preguntas": [
+          {
+            "id": 31,
+            "pregunta": "¿Qué es SQL?",
+            "opciones": ["Un lenguaje de programación", "Un lenguaje de consulta estructurado", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un lenguaje de consulta estructurado"
+          },
+          {
+            "id": 32,
+            "pregunta": "¿Qué es una 'clave primaria' en una base de datos?",
+            "opciones": ["Un tipo de dato", "Un campo que identifica de manera única cada registro en una tabla", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un campo que identifica de manera única cada registro en una tabla"
+          },
+          {
+            "id": 33,
+            "pregunta": "¿Qué es una 'clave foránea' en una base de datos?",
+            "opciones": ["Un tipo de dato", "Un campo que establece una relación entre dos tablas", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un campo que establece una relación entre dos tablas"
+          },
+          {
+            "id": 34,
+            "pregunta": "¿Qué es un 'índice' en una base de datos?",
+            "opciones": ["Un tipo de dato", "Una estructura que mejora la velocidad de las operaciones de búsqueda", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Una estructura que mejora la velocidad de las operaciones de búsqueda"
+          },
+          {
+            "id": 35,
+            "pregunta": "¿Qué es una 'transacción' en una base de datos?",
+            "opciones": ["Un tipo de dato", "Una secuencia de operaciones que se ejecutan como una sola unidad", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Una secuencia de operaciones que se ejecutan como una sola unidad"
+          },
+          {
+            "id": 36,
+            "pregunta": "¿Qué es 'ACID' en bases de datos?",
+            "opciones": ["Un tipo de dato", "Un conjunto de propiedades que garantizan la fiabilidad de las transacciones", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un conjunto de propiedades que garantizan la fiabilidad de las transacciones"
+          },
+          {
+            "id": 37,
+            "pregunta": "¿Qué es 'NoSQL'?",
+            "opciones": ["Un lenguaje de programación", "Un tipo de base de datos que no utiliza SQL", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un tipo de base de datos que no utiliza SQL"
+          },
+          {
+            "id": 38,
+            "pregunta": "¿Qué es 'MongoDB'?",
+            "opciones": ["Un lenguaje de programación", "Una base de datos NoSQL", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Una base de datos NoSQL"
+          },
+          {
+            "id": 39,
+            "pregunta": "¿Qué es 'Redis'?",
+            "opciones": ["Un lenguaje de programación", "Un sistema de almacenamiento en memoria", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un sistema de almacenamiento en memoria"
+          },
+          {
+            "id": 40,
+            "pregunta": "¿Qué es 'PostgreSQL'?",
+            "opciones": ["Un lenguaje de programación", "Un sistema de gestión de bases de datos relacional", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un sistema de gestión de bases de datos relacional"
+          },
+          {
+            "id": 41,
+            "pregunta": "¿Qué es 'MySQL'?",
+            "opciones": ["Un lenguaje de programación", "Un sistema de gestión de bases de datos relacional", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un sistema de gestión de bases de datos relacional"
+          },
+          {
+            "id": 42,
+            "pregunta": "¿Qué es 'SQLite'?",
+            "opciones": ["Un lenguaje de programación", "Un sistema de gestión de bases de datos embebido", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un sistema de gestión de bases de datos embebido"
+          },
+          {
+            "id": 43,
+            "pregunta": "¿Qué es 'Cassandra'?",
+            "opciones": ["Un lenguaje de programación", "Un sistema de gestión de bases de datos distribuido", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un sistema de gestión de bases de datos distribuido"
+          },
+          {
+            "id": 44,
+            "pregunta": "¿Qué es 'Elasticsearch'?",
+            "opciones": ["Un lenguaje de programación", "Un motor de búsqueda y análisis distribuido", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un motor de búsqueda y análisis distribuido"
+          },
+          {
+            "id": 45,
+            "pregunta": "¿Qué es 'Bigtable'?",
+            "opciones": ["Un lenguaje de programación", "Un sistema de almacenamiento distribuido de Google", "Un framework de frontend", "Un sistema de bases de datos"],
+            "correcta": "Un sistema de almacenamiento distribuido de Google"
+          }
+        ]
+      }
+    ]
+  }
