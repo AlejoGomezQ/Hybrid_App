@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
-import PropTypes from 'prop-types';
 
 const TopicButton = ({ icon, name }) => {
     const navigate = useNavigate();
@@ -7,7 +7,7 @@ const TopicButton = ({ icon, name }) => {
     return (
         <button
             onClick={() => navigate(`/game/${name.toLowerCase()}`)}
-            className="w-full flex items-center gap-3 px-4 py-6 text-base font-medium 
+            className="w-full flex items-center justify-between margin-lg px-4 py-6 text-base font-medium 
                  bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors
                  focus:outline-none focus:ring-2 focus:ring-gray-300"
             aria-label={`Seleccionar tema ${name}`}
@@ -17,10 +17,5 @@ const TopicButton = ({ icon, name }) => {
         </button>
     );
 }
-
-TopicButton.propTypes = {
-    icon: PropTypes.node.isRequired,
-    name: PropTypes.string.isRequired,
-};
 
 export default TopicButton;
