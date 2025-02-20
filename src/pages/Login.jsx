@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import Input from "@/components/shared/Input";
 import Button from "@/components/shared/Button";
 import Avatar from "@/components/shared/Avatar";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
     const [nickname, setNickname] = useState("");
+    const navigate = useNavigate();
 
     useEffect(() => {
         const storedNickname = window.localStorage.getItem("nickname");
@@ -29,6 +31,8 @@ const LoginPage = () => {
             alert("El campo NickName no puede estar vacío");
             return;
         }
+        localStorage.setItem("nickname", nickname);
+        navigate("/game-modes");
     };
 
     return (
