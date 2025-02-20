@@ -15,16 +15,6 @@ const LoginPage = () => {
         }
     }, []);
 
-    useEffect(() => {
-        if (nickname) {
-            window.localStorage.setItem("nickname", nickname);
-        }
-    }, [nickname]);
-
-    const handleChange = (e) => {
-        setNickname(e.target.value);
-    };
-
     const validacion = (e) => {
         e.preventDefault();
         if (!nickname.trim()) {
@@ -33,6 +23,10 @@ const LoginPage = () => {
         }
         localStorage.setItem("nickname", nickname);
         navigate("/game-modes");
+    };
+
+    const handleChange = (e) => {
+        setNickname(e.target.value);
     };
 
     return (
