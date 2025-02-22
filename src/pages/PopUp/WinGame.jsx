@@ -3,7 +3,7 @@ import Button from "@/components/shared/Button";
 import Avatar from "@/components/shared/Avatar";
 import { useNavigate } from "react-router-dom";
 
-const WinPage = () => {
+const WinPopUP = () => {
     const [nickname, setNickname] = useState("");
     const navigate = useNavigate();
 
@@ -33,4 +33,4 @@ const WinPage = () => {
     );
 };
 
-export default WinPage;
+export default WinPopUP;
