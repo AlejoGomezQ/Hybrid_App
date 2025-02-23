@@ -11,7 +11,7 @@ const GamePage = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
-  const { category } = useParams();
+  const {category} = useParams();
   const [showLosePopUp, setShowLosePopUp] = useState(false);
   const [resetTimer, setResetTimer] = useState(false);
 
