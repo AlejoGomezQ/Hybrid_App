@@ -107,14 +107,15 @@ const GamePage = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-4 left-0 right-0 max-w-md mx-auto px-4">
+      <div className="fixed bottom-6 left-0 right-0 max-w-md mx-auto px-10">
         <FoooterComodin
           currentQuestion={currentQuestion}
           setCurrentQuestion={setCurrentQuestion}
+          loadRandomQuestion={loadRandomQuestion}
         />
       </div>
       {showLosePopUp && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm">
           <LosePopUp onClose={loadRandomQuestion} />
         </div>
       )}

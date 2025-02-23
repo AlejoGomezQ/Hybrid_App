@@ -1,8 +1,9 @@
 import { Shuffle, Repeat2, View } from "lucide-react";
 import { useState } from "react";
 
-function FoooterComodin({ currentQuestion, setCurrentQuestion }) {
+function FoooterComodin({ currentQuestion, setCurrentQuestion, loadRandomQuestion }) {
   const [comodinUsado, setComodinUsado] = useState(false);
+  const [comodinCambioUsado, setComodinCambioUsado] = useState(false);
 
   const handleShuffle = () => {
     if (comodinUsado || !currentQuestion) return;
@@ -29,12 +30,18 @@ function FoooterComodin({ currentQuestion, setCurrentQuestion }) {
     }
   };
 
+  const handleChangeQuestion = () => {
+    if (comodinCambioUsado) return;
+    loadRandomQuestion(); 
+    setComodinCambioUsado(true);
+  };
+
   return (
     <footer className="footer">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center ">
         <button
-          className={`p-3 bg-white rounded-full shadow-md cursor-pointer${
-            comodinUsado ? "opacity-50 cursor-not-allowed " : ""
+          className={`p-3 bg-gray-300 rounded-full shadow-m cursor-pointer${
+            comodinUsado ? "opacity-80 cursor-no-drop" : ""
           }`}
           onClick={handleShuffle}
           disabled={comodinUsado}
@@ -42,11 +49,17 @@ function FoooterComodin({ currentQuestion, setCurrentQuestion }) {
           <Shuffle className="w-6 h-6" label="50/50" />
         </button>
 
-        <button className="p-3 bg-white rounded-full shadow-md font-bold">
+        <button className="p-3  bg-gray-300 rounded-full shadow-md font-bold cursor-pointer">
           <View className="w-6 h-6" label="Respuesta" />
         </button>
 
-        <button className="p-3 bg-white rounded-full shadow-md">
+        <button
+          className={`p-3 bg-gray-300 rounded-full shadow-md cursor-pointer${
+            comodinCambioUsado ? "opacity-80 cursor-no-drop" : ""
+          }`}
+          onClick={handleChangeQuestion}
+          disabled={comodinCambioUsado}
+        >
           <Repeat2 className="w-6 h-6" label="Cambio Pregunta" />
         </button>
       </div>

@@ -4,7 +4,7 @@ const Timer = ({ onLose, reset }) => {
     const [seconds, setSeconds] = useState(30);
 
     useEffect(() => {
-        setSeconds(15); 
+        setSeconds(30); 
     }, [reset]);
 
     useEffect(() => {
