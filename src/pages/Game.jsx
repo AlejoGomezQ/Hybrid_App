@@ -15,18 +15,19 @@ const GamePage = () => {
   const [showLosePopUp, setShowLosePopUp] = useState(false);
   const [resetTimer, setResetTimer] = useState(false);
 
-  
   const loadRandomQuestion = () => {
     const categoryData = questionData.categorias.find(
       (cat) => cat.nombre.toLowerCase() === category
     );
     if (categoryData) {
-      const randomIndex = Math.floor(Math.random() * categoryData.preguntas.length);
+      const randomIndex = Math.floor(
+        Math.random() * categoryData.preguntas.length
+      );
       setCurrentQuestion(categoryData.preguntas[randomIndex]);
       setSelectedAnswer(null);
       setShowResult(false);
-      setResetTimer((prev) => !prev); 
-      setShowLosePopUp(false); 
+      setResetTimer((prev) => !prev);
+      setShowLosePopUp(false);
     }
   };
 
@@ -34,40 +35,46 @@ const GamePage = () => {
     loadRandomQuestion();
   }, [category]);
 
-  
   const handleAnswerSelect = (answer) => {
     setSelectedAnswer(answer);
     setShowResult(true);
     if (answer === currentQuestion.correcta) {
       setScore((prevScore) => prevScore + 10);
       setTimeout(() => {
-        handleNextQuestion(); 
+        handleNextQuestion();
       }, 1000);
     } else {
-    setTimeout(() => {
-      setShowLosePopUp(true); 
-    }, 2000);
+      setTimeout(() => {
+        setShowLosePopUp(true);
+      }, 2000);
     }
   };
 
-   
-   const handleNextQuestion = () => {
+  const handleNextQuestion = () => {
     loadRandomQuestion();
   };
 
-  
   const handleLose = () => {
     setShowLosePopUp(true);
   };
 
   return (
-    <div className={`relative max-w-md mx-auto min-h-screen p-4 transition-all ${showLosePopUp ? "bg-gray-900 bg-opacity-70 backdrop-blur-md" : "bg-gray-100"}`}>
+    <div
+      className={`relative max-w-md mx-auto min-h-screen p-4 transition-all ${
+        showLosePopUp
+          ? "bg-gray-900 bg-opacity-70 backdrop-blur-md"
+          : "bg-gray-100"
+      }`}
+    >
       <HeaderMenu score={score} />
       <div className="relative mb-8">
         <Timer onLose={handleLose} reset={resetTimer} />
       </div>
-      <div className={`${showLosePopUp ? "opacity-20 pointer-events-none" : "opacity-100"}`}>
-    
+      <div
+        className={`${
+          showLosePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
+        }`}
+      >
         <div className="bg-gray-300 p-6 rounded-lg mb-6 min-h-[120px] flex items-center justify-center">
           {currentQuestion ? (
             <span className="text-lg font-bold text-center">
@@ -76,7 +83,7 @@ const GamePage = () => {
           ) : (
             <span className="text-lg text-gray-600">Cargando pregunta...</span>
           )}
-        </div>     
+        </div>
         <div className="space-y-3 mb-8">
           {currentQuestion?.opciones.map((opcion, index) => (
             <button
@@ -99,9 +106,12 @@ const GamePage = () => {
           ))}
         </div>
       </div>
-     
+
       <div className="fixed bottom-4 left-0 right-0 max-w-md mx-auto px-4">
-        <FoooterComodin />
+        <FoooterComodin
+          currentQuestion={currentQuestion}
+          setCurrentQuestion={setCurrentQuestion}
+        />
       </div>
       {showLosePopUp && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md">
