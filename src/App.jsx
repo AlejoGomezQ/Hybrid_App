@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/game-modes" element={<GameModesPage />} />
-        <Route path="/game/:name" element={<GamePage />} />
+        <Route path="/game/:category" element={<GamePage />} />
         <Route path="/lose-game" element={<LosePopUp />} />
         <Route path="/win-game" element={<WinPopUp />} />
         <Route path="/comodin" element={<ComodinPopUP />} />
