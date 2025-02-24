@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import HeaderMenu from "../components/shared/HeaderMenu";
 import Timer from "../components/Timer";
 import questionData from "../db/question.json";
 import LosePopUp from "./PopUp/LoseGame";
 import FoooterComodin from "../components/FooterComodin";
+import HeaderGame from "../components/HeaderGame";
 
 const GamePage = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -66,7 +66,7 @@ const GamePage = () => {
           : "bg-gray-100"
       }`}
     >
-      <HeaderMenu score={score} />
+      <HeaderGame score={score} />
       <div className="relative mb-8">
         <Timer onLose={handleLose} reset={resetTimer} />
       </div>
