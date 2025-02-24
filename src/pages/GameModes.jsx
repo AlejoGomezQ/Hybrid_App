@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IconJS, IconPython, IconSQL } from "../components/Icons"
 import TopicButton from "../components/TopicButton"
+import HeaderGameMode from "../components/HeaderGameMode";
 
 import data from "../db/question.json";
 import { useEffect } from "react";
@@ -28,11 +29,12 @@ const GameModesPage = () => {
     };
 
     return (
-        <div className="max-w-md mx-auto px-4 py-6 h-screen bg-gray-300">
+        <div className="relative max-w-md mx-auto min-h-screen p-4 transition-all bg-gray-100">
+            <HeaderGameMode />
             <h1 className="mb-6 text-xl font-bold text-center">Elige una categoria</h1>
-            <div className="h-full rounded-xl bg-white">
+            <div className="h-full rounded-xl bg-gray-300">
 
-                <div className="flex flex-col space-y-3 gap-y-3">
+                <div className="flex flex-col space-y-1 gap-y-1 px-7 ">
                     {categories.map((category) => (
                         <TopicButton
                             key={category.nombre}

@@ -1,8 +1,8 @@
 import React from 'react';
-import { ArrowLeft} from 'lucide-react';
+import { ArrowLeft, Crown} from 'lucide-react';
 import { useNavigate } from "react-router-dom";
 
-const HeaderMenu = () => {
+const HeaderGame = () => {
     const nick = localStorage.getItem("nickname");
     const navigate = useNavigate();
 
@@ -19,9 +19,11 @@ const HeaderMenu = () => {
             <button onClick={handleClick} className="p-2 bg-gray-300 rounded-full cursor-pointer">
                 <ArrowLeft className="w-6 h-6" />
             </button>
-            <div className="font-bold text-lg">{nick}</div>
-            <button onClick={handleClick2} className="p-2 font-bold bg-gray-300 rounded-full cursor-pointer">PTS</button>
+            <div className="font-bold text-lg bg-gray-300 rounded-full py-2 px-10">{nick}</div>
+            <button onClick={handleClick2} className="p-2 font-bold bg-gray-300 rounded-full cursor-pointer">
+                <Crown className="w-6 h-6" />
+            </button>
         </header>
     );
 }
-export default HeaderMenu
+export default HeaderGame
