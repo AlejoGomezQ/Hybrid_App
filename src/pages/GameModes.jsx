@@ -1,51 +1,46 @@
-import { useState } from "react";
+import { useState, useEffect } from "react"
 import { IconJS, IconPython, IconSQL } from "../components/Icons"
 import TopicButton from "../components/TopicButton"
-import HeaderGameMode from "../components/HeaderGameMode";
+import HeaderGameMode from "../components/HeaderGameMode"
 
-import data from "../db/question.json";
-import { useEffect } from "react";
+import data from "../db/question.json"
 
 const GameModesPage = () => {
-    const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState([])
 
     // Cargar las categorías al montar el componente
     useEffect(() => {
-        setCategories(data.categorias);
-    }, []);
+        setCategories(data.categorias)
+    }, [])
 
     // Función para obtener el ícono correspondiente a cada categoría
     const getIconForCategory = (categoryName) => {
         switch (categoryName) {
             case "Frontend":
-                return <IconJS />;
+                return <IconJS />
             case "Backend":
-                return <IconPython />;
+                return <IconPython />
             case "Bases de datos":
-                return <IconSQL />;
+                return <IconSQL />
             default:
-                return null;
+                return null
         }
-    };
+    }
 
     return (
-        <div className="relative max-w-md mx-auto min-h-screen p-4 transition-all bg-gray-100">
-            <HeaderGameMode />
-            <h1 className="mb-6 text-xl font-bold text-center">Elige una categoria</h1>
-            <div className="h-full rounded-xl bg-gray-300">
-
-                <div className="flex flex-col space-y-1 gap-y-1 px-7 ">
+        <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
+            <div className="max-w-md mx-auto bg-white/20 rounded-lg shadow-lg p-6">
+                <HeaderGameMode />
+                <h1 className="mb-6 text-2xl font-bold text-center text-white">Elige una categoria</h1>
+                <div className="space-y-3">
                     {categories.map((category) => (
-                        <TopicButton
-                            key={category.nombre}
-                            icon={getIconForCategory(category.nombre)}
-                            name={category.nombre}
-                        />
+                        <TopicButton key={category.nombre} icon={getIconForCategory(category.nombre)} name={category.nombre} />
                     ))}
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
 export default GameModesPage
+

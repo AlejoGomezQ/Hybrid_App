@@ -31,7 +31,7 @@ const LoginPage = () => {
 
     return (
         <section className="py-7 px-7 h-screen bg-gradient-to-br from-purple-600 to-blue-500 font-sans">
-            <div className="bg-white/20 backdrop-blur-md h-full rounded-lg max-w-md mx-auto px-6 py-10 flex flex-col items-center justify-around space-y-6 shadow-lg">
+            <div className="bg-white/20 h-full rounded-lg max-w-md mx-auto px-6 py-10 flex flex-col items-center justify-around space-y-6 shadow-lg">
                 <div className="text-center space-y-4">
                     <Avatar />
                     {nickname && <p className="text-white text-3xl font-semibold">{nickname}</p>}
