@@ -28,14 +28,16 @@ const GameModesPage = () => {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
-            <div className="max-w-md mx-auto bg-white/20 rounded-lg shadow-lg p-6">
-                <HeaderGameMode />
-                <h1 className="mb-6 text-2xl font-bold text-center text-white">Elige una categoria</h1>
-                <div className="space-y-3">
-                    {categories.map((category) => (
-                        <TopicButton key={category.nombre} icon={getIconForCategory(category.nombre)} name={category.nombre} />
-                    ))}
+        <div className="h-screen bg-gradient-to-br from-purple-600 to-blue-500 font-sans flex flex-col">
+            <div className="flex-1 flex flex-col p-4">
+                <div className="max-w-md mx-auto w-full h-full flex flex-col bg-white/20 rounded-lg shadow-lg p-6">
+                    <HeaderGameMode />
+                    <h1 className="mb-6 text-2xl font-bold text-center text-white">Elige una categoria</h1>
+                    <div className="flex-1 flex flex-col gap-y-5">
+                        {categories.map((category) => (
+                            <TopicButton key={category.nombre} icon={getIconForCategory(category.nombre)} name={category.nombre} />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,4 +45,3 @@ const GameModesPage = () => {
 }
 
 export default GameModesPage
-
