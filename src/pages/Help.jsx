@@ -7,7 +7,7 @@ const HelpPage = () => {
         <div className="max-w-md mx-auto px-4 py-6 h-screen bg-gray-300">
             <h1 className="mb-2 text-xl font-bold text-center font-inter text-[30px]">¿CÓMO JUGAR?</h1>
             
-            <div className="h-full rounded-xl bg-white p-6 flex flex-col justify-between">
+            <div className="h-[90%] rounded-xl bg-white p-6 flex flex-col justify-between">
                 <div>
                     <p className="text-gray-700 text-base mb-1">
                     Bienvenido a nuestro juego de preguntas y respuestas tecnológicas. 
