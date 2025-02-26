@@ -1,12 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { ArrowLeft } from 'lucide-react';
 import { Wildcard50} from "../components/Wildcards"
 
 const HelpPage = () => {
+    const navigate = useNavigate();
+    
+    const handleClick = () => {
+        navigate("/game-modes");
+    };
+
     return (
         <div className="max-w-md mx-auto px-4 py-6 h-screen bg-gray-300">
-            <h1 className="mb-2 text-xl font-bold text-center font-inter text-[30px]">¿CÓMO JUGAR?</h1>
-            
+
+            <div className="flex items-center justify-center space-x-8 mb-2 mr-14">
+
+                <button onClick={handleClick} className="p-2 bg-white rounded-full cursor-pointer">
+                    <ArrowLeft className="w-6 h-6" />
+                </button>
+                
+                <h1 className="mb-2 text-xl font-bold text-center font-inter text-[30px]">¿CÓMO JUGAR?</h1>
+            </div>
+
             <div className="h-[90%] rounded-xl bg-white p-6 flex flex-col justify-between">
                 <div>
                     <p className="text-gray-700 text-base mb-1">
