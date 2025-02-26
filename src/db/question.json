@@ -187,6 +187,226 @@
           "pregunta": "¿Qué evento de JavaScript se dispara cuando un usuario hace clic en un botón?",
           "opciones": ["click", "mouseover", "keydown", "submit"],
           "correcta": "click"
+        }, 
+        {
+          "id": 21,
+          "pregunta": "¿Qué es un componente en React?",
+          "opciones": [
+            "Una pieza reutilizable de código que renderiza una parte de la interfaz de usuario",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Una pieza reutilizable de código que renderiza una parte de la interfaz de usuario"
+        },
+        {
+          "id": 22,
+          "pregunta": "¿Qué es un hook en React?",
+          "opciones": [
+            "Una función especial que permite usar el estado y otras características de React",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Una función especial que permite usar el estado y otras características de React"
+        },
+        {
+          "id": 23,
+          "pregunta": "¿Qué es un prop en React?",
+          "opciones": [
+            "Un objeto que pasa datos de un componente padre a un componente hijo",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un objeto que pasa datos de un componente padre a un componente hijo"
+        },
+        {
+          "id": 24,
+          "pregunta": "¿Qué es un estado en React?",
+          "opciones": [
+            "Un objeto que contiene datos que pueden cambiar en un componente",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un objeto que contiene datos que pueden cambiar en un componente"
+        },
+        {
+          "id": 25,
+          "pregunta": "¿Qué es un ciclo de vida en React?",
+          "opciones": [
+            "Una serie de métodos que se ejecutan en diferentes etapas de un componente",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Una serie de métodos que se ejecutan en diferentes etapas de un componente"
+        },
+        {
+          "id": 26,
+          "pregunta": "¿Qué es un evento en React?",
+          "opciones": [
+            "Una acción que ocurre en la interfaz de usuario, como un clic o un cambio",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Una acción que ocurre en la interfaz de usuario, como un clic o un cambio"
+        },
+        {
+          "id": 27,
+          "pregunta": "¿Qué es un componente de clase en React?",
+          "opciones": [
+            "Un componente que extiende la clase Component de React",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un componente que extiende la clase Component de React"
+        },
+        {
+          "id": 28,
+          "pregunta": "¿Qué es un componente funcional en React?",
+          "opciones": [
+            "Un componente que es una función de JavaScript",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un componente que es una función de JavaScript"
+        },
+        {
+          "id": 29,
+          "pregunta": "¿Qué es un hook de efecto en React?",
+          "opciones": [
+            "Un hook que permite realizar efectos secundarios en componentes funcionales",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un hook que permite realizar efectos secundarios en componentes funcionales"
+        },
+        {
+          "id": 30,
+          "pregunta": "¿Qué es un hook de estado en React?",
+          "opciones": [
+            "Un hook que permite añadir estado a componentes funcionales",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un hook que permite añadir estado a componentes funcionales"
+        },
+        {
+          "id": 31,
+          "pregunta": "¿Qué es un hook personalizado en React?",
+          "opciones": [
+            "Un hook creado por el usuario para reutilizar lógica en componentes",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un hook creado por el usuario para reutilizar lógica en componentes"
+        },
+        {
+          "id": 32,
+          "pregunta": "¿Qué es un contexto en React?",
+          "opciones": [
+            "Un mecanismo para pasar datos a través del árbol de componentes sin tener que pasar props manualmente en cada nivel",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un mecanismo para pasar datos a través del árbol de componentes sin tener que pasar props manualmente en cada nivel"
+        },
+        {
+          "id": 33,
+          "pregunta": "¿Qué es un portal en React?",
+          "opciones": [
+            "Una forma de renderizar un componente en un nodo DOM fuera del árbol principal de componentes",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Una forma de renderizar un componente en un nodo DOM fuera del árbol principal de componentes"
+        },
+        {
+          "id": 34,
+          "pregunta": "¿Qué es un Higher Order Component (HOC) en React?",
+          "opciones": [
+            "Un patrón que permite reutilizar lógica entre componentes",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un patrón que permite reutilizar lógica entre componentes"
+        },
+        {
+          "id": 35,
+          "pregunta": "¿Qué es un render prop en React?",
+          "opciones": [
+            "Un patrón que permite pasar una función como prop para renderizar contenido",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un patrón que permite pasar una función como prop para renderizar contenido"
+        },
+        {
+          "id": 36,
+          "pregunta": "¿Qué es un componente controlado en React?",
+          "opciones": [
+            "Un componente que maneja su propio estado a través de props",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un componente que maneja su propio estado a través de props"
+        },
+        {
+          "id": 37,
+          "pregunta": "¿Qué es un componente no controlado en React?",
+          "opciones": [
+            "Un componente que maneja su propio estado internamente sin necesidad de props",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un componente que maneja su propio estado internamente sin necesidad de props"
+        },
+        {
+          "id": 38,
+          "pregunta": "¿Qué es un componente de presentación en React?",
+          "opciones": [
+            "Un componente que se enfoca en la apariencia y no en la lógica",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un componente que se enfoca en la apariencia y no en la lógica"
+        },
+        {
+          "id": 39,
+          "pregunta": "¿Qué es un componente de contenedor en React?",
+          "opciones": [
+            "Un componente que maneja la lógica y pasa datos a componentes de presentación",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un componente que maneja la lógica y pasa datos a componentes de presentación"
+        },
+        {
+          "id": 40,
+          "pregunta": "¿Qué es un componente de orden superior en React?",
+          "opciones": [
+            "Un componente que envuelve otro componente para proporcionar funcionalidad adicional",
+            "Un servidor de bases de datos",
+            "Un lenguaje de programación",
+            "Un sistema de gestión de estado"
+          ],
+          "correcta": "Un componente que envuelve otro componente para proporcionar funcionalidad adicional"
         }
       ]
     },
@@ -382,6 +602,226 @@
             "Un servidor de aplicaciones"
           ],
           "correcta": "Un formato seguro para autenticación y autorización"
+        },
+        {
+          "id": 21,
+          "pregunta": "¿Qué es un servidor de aplicaciones?",
+          "opciones": [
+            "Un servidor que ejecuta lógica de negocio y maneja peticiones",
+            "Un servidor de bases de datos",
+            "Un servidor web",
+            "Un servidor de autenticación"
+          ],
+          "correcta": "Un servidor que ejecuta lógica de negocio y maneja peticiones"
+        },
+        {
+          "id": 22,
+          "pregunta": "¿Qué es un servidor de autenticación?",
+          "opciones": [
+            "Un servidor que maneja la autenticación de usuarios",
+            "Un servidor de bases de datos",
+            "Un servidor web",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que maneja la autenticación de usuarios"
+        },
+        {
+          "id": 23,
+          "pregunta": "¿Qué es un servidor de bases de datos?",
+          "opciones": [
+            "Un servidor que almacena y gestiona datos",
+            "Un servidor web",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que almacena y gestiona datos"
+        },
+        {
+          "id": 24,
+          "pregunta": "¿Qué es un servidor web?",
+          "opciones": [
+            "Un servidor que responde a solicitudes HTTP",
+            "Un servidor de bases de datos",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que responde a solicitudes HTTP"
+        },
+        {
+          "id": 25,
+          "pregunta": "¿Qué es un servidor proxy?",
+          "opciones": [
+            "Un servidor que actúa como intermediario entre cliente y servidor",
+            "Un servidor de bases de datos",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que actúa como intermediario entre cliente y servidor"
+        },
+        {
+          "id": 26,
+          "pregunta": "¿Qué es un servidor de caché?",
+          "opciones": [
+            "Un servidor que almacena datos temporalmente para mejorar el rendimiento",
+            "Un servidor de bases de datos",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que almacena datos temporalmente para mejorar el rendimiento"
+        },
+        {
+          "id": 27,
+          "pregunta": "¿Qué es un servidor de aplicaciones?",
+          "opciones": [
+            "Un servidor que ejecuta lógica de negocio y maneja peticiones",
+            "Un servidor de bases de datos",
+            "Un servidor web",
+            "Un servidor de autenticación"
+          ],
+          "correcta": "Un servidor que ejecuta lógica de negocio y maneja peticiones"
+        },
+        {
+          "id": 28,
+          "pregunta": "¿Qué es un servidor de autenticación?",
+          "opciones": [
+            "Un servidor que maneja la autenticación de usuarios",
+            "Un servidor de bases de datos",
+            "Un servidor web",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que maneja la autenticación de usuarios"
+        },
+        {
+          "id": 29,
+          "pregunta": "¿Qué es un servidor de bases de datos?",
+          "opciones": [
+            "Un servidor que almacena y gestiona datos",
+            "Un servidor web",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que almacena y gestiona datos"
+        },
+        {
+          "id": 30,
+          "pregunta": "¿Qué es un servidor web?",
+          "opciones": [
+            "Un servidor que responde a solicitudes HTTP",
+            "Un servidor de bases de datos",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que responde a solicitudes HTTP"
+        },
+        {
+          "id": 31,
+          "pregunta": "¿Qué es un servidor proxy?",
+          "opciones": [
+            "Un servidor que actúa como intermediario entre cliente y servidor",
+            "Un servidor de bases de datos",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que actúa como intermediario entre cliente y servidor"
+        },
+        {
+          "id": 32,
+          "pregunta": "¿Qué es un servidor de caché?",
+          "opciones": [
+            "Un servidor que almacena datos temporalmente para mejorar el rendimiento",
+            "Un servidor de bases de datos",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que almacena datos temporalmente para mejorar el rendimiento"
+        },
+        {
+          "id": 33,
+          "pregunta": "¿Qué es un servidor de aplicaciones?",
+          "opciones": [
+            "Un servidor que ejecuta lógica de negocio y maneja peticiones",
+            "Un servidor de bases de datos",
+            "Un servidor web",
+            "Un servidor de autenticación"
+          ],
+          "correcta": "Un servidor que ejecuta lógica de negocio y maneja peticiones"
+        },
+        {
+          "id": 34,
+          "pregunta": "¿Qué es un servidor de autenticación?",
+          "opciones": [
+            "Un servidor que maneja la autenticación de usuarios",
+            "Un servidor de bases de datos",
+            "Un servidor web",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que maneja la autenticación de usuarios"
+        },
+        {
+          "id": 35,
+          "pregunta": "¿Qué es un servidor de bases de datos?",
+          "opciones": [
+            "Un servidor que almacena y gestiona datos",
+            "Un servidor web",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que almacena y gestiona datos"
+        },
+        {
+          "id": 36,
+          "pregunta": "¿Qué es un servidor web?",
+          "opciones": [
+            "Un servidor que responde a solicitudes HTTP",
+            "Un servidor de bases de datos",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que responde a solicitudes HTTP"
+        },
+        {
+          "id": 37,
+          "pregunta": "¿Qué es un servidor proxy?",
+          "opciones": [
+            "Un servidor que actúa como intermediario entre cliente y servidor",
+            "Un servidor de bases de datos",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que actúa como intermediario entre cliente y servidor"
+        },
+        {
+          "id": 38,
+          "pregunta": "¿Qué es un servidor de caché?",
+          "opciones": [
+            "Un servidor que almacena datos temporalmente para mejorar el rendimiento",
+            "Un servidor de bases de datos",
+            "Un servidor de autenticación",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que almacena datos temporalmente para mejorar el rendimiento"
+        },
+        {
+          "id": 39,
+          "pregunta": "¿Qué es un servidor de aplicaciones?",
+          "opciones": [
+            "Un servidor que ejecuta lógica de negocio y maneja peticiones",
+            "Un servidor de bases de datos",
+            "Un servidor web",
+            "Un servidor de autenticación"
+          ],
+          "correcta": "Un servidor que ejecuta lógica de negocio y maneja peticiones"
+        },
+        {
+          "id": 40,
+          "pregunta": "¿Qué es un servidor de autenticación?",
+          "opciones": [
+            "Un servidor que maneja la autenticación de usuarios",
+            "Un servidor de bases de datos",
+            "Un servidor web",
+            "Un servidor de aplicaciones"
+          ],
+          "correcta": "Un servidor que maneja la autenticación de usuarios"
         }
       ]
     },
@@ -547,6 +987,1018 @@
           "pregunta": "¿Qué herramienta se usa para administrar bases de datos PostgreSQL?",
           "opciones": ["pgAdmin", "phpMyAdmin", "MongoDB Compass", "Redis CLI"],
           "correcta": "pgAdmin"
+        },
+        {
+          "id": 21,
+          "pregunta": "¿Qué comando se usa para modificar la estructura de una tabla en SQL?",
+          "opciones": ["ALTER TABLE", "UPDATE TABLE", "MODIFY TABLE", "CHANGE TABLE"],
+          "correcta": "ALTER TABLE"
+        },
+        {
+          "id": 22,
+          "pregunta": "¿Qué comando se usa para agregar una columna a una tabla en SQL?",
+          "opciones": ["ALTER TABLE ADD COLUMN", "ADD COLUMN", "INSERT COLUMN", "CREATE COLUMN"],
+          "correcta": "ALTER TABLE ADD COLUMN"
+        },
+        {
+          "id": 23,
+          "pregunta": "¿Qué comando se usa para eliminar una columna de una tabla en SQL?",
+          "opciones": ["ALTER TABLE DROP COLUMN", "DROP COLUMN", "REMOVE COLUMN", "DELETE COLUMN"],
+          "correcta": "ALTER TABLE DROP COLUMN"
+        },
+        {
+          "id": 24,
+          "pregunta": "¿Qué comando se usa para renombrar una tabla en SQL?",
+          "opciones": ["ALTER TABLE RENAME", "RENAME TABLE", "RENAME", "CHANGE TABLE"],
+          "correcta": "ALTER TABLE RENAME"
+        },
+        {
+          "id": 25,
+          "pregunta": "¿Qué comando se usa para renombrar una columna en SQL?",
+          "opciones": ["ALTER TABLE RENAME COLUMN", "RENAME COLUMN", "RENAME", "CHANGE COLUMN"],
+          "correcta": "ALTER TABLE RENAME COLUMN"
+        },
+        {
+          "id": 26,
+          "pregunta": "¿Qué comando se usa para cambiar el tipo de datos de una columna en SQL?",
+          "opciones": ["ALTER TABLE MODIFY COLUMN", "MODIFY COLUMN", "CHANGE COLUMN", "UPDATE COLUMN"],
+          "correcta": "ALTER TABLE MODIFY COLUMN"
+        },
+        {
+          "id": 27,
+          "pregunta": "¿Qué comando se usa para agregar una clave foránea en SQL?",
+          "opciones": ["ALTER TABLE ADD FOREIGN KEY", "ADD FOREIGN KEY", "CREATE FOREIGN KEY", "FOREIGN KEY"],
+          "correcta": "ALTER TABLE ADD FOREIGN KEY"
+        },
+        {
+          "id": 28,
+          "pregunta": "¿Qué comando se usa para eliminar una clave foránea en SQL?",
+          "opciones": ["ALTER TABLE DROP FOREIGN KEY", "DROP FOREIGN KEY", "REMOVE FOREIGN KEY", "DELETE FOREIGN KEY"],
+          "correcta": "ALTER TABLE DROP FOREIGN KEY"
+        },
+        {
+          "id": 29,
+          "pregunta": "¿Qué comando se usa para crear un índice en SQL?",
+          "opciones": ["CREATE INDEX", "INDEX", "ADD INDEX", "MAKE INDEX"],
+          "correcta": "CREATE INDEX"
+        },
+        {
+          "id": 30,
+          "pregunta": "¿Qué comando se usa para eliminar un índice en SQL?",
+          "opciones": ["DROP INDEX", "REMOVE INDEX", "DELETE INDEX", "ALTER INDEX"],
+          "correcta": "DROP INDEX"
+        },
+        {
+          "id": 31,
+          "pregunta": "¿Qué comando se usa para crear una vista en SQL?",
+          "opciones": ["CREATE VIEW", "VIEW", "ADD VIEW", "MAKE VIEW"],
+          "correcta": "CREATE VIEW"
+        },
+        {
+          "id": 32,
+          "pregunta": "¿Qué comando se usa para eliminar una vista en SQL?",
+          "opciones": ["DROP VIEW", "REMOVE VIEW", "DELETE VIEW", "ALTER VIEW"],
+          "correcta": "DROP VIEW"
+        },
+        {
+          "id": 33,
+          "pregunta": "¿Qué comando se usa para crear un procedimiento almacenado en SQL?",
+          "opciones": ["CREATE PROCEDURE", "PROCEDURE", "ADD PROCEDURE", "MAKE PROCEDURE"],
+          "correcta": "CREATE PROCEDURE"
+        },
+        {
+          "id": 34,
+          "pregunta": "¿Qué comando se usa para eliminar un procedimiento almacenado en SQL?",
+          "opciones": ["DROP PROCEDURE", "REMOVE PROCEDURE", "DELETE PROCEDURE", "ALTER PROCEDURE"],
+          "correcta": "DROP PROCEDURE"
+        },
+        {
+          "id": 35,
+          "pregunta": "¿Qué comando se usa para crear una función en SQL?",
+          "opciones": ["CREATE FUNCTION", "FUNCTION", "ADD FUNCTION", "MAKE FUNCTION"],
+          "correcta": "CREATE FUNCTION"
+        },
+        {
+          "id": 36,
+          "pregunta": "¿Qué comando se usa para eliminar una función en SQL?",
+          "opciones": ["DROP FUNCTION", "REMOVE FUNCTION", "DELETE FUNCTION", "ALTER FUNCTION"],
+          "correcta": "DROP FUNCTION"
+        },
+        {
+          "id": 37,
+          "pregunta": "¿Qué comando se usa para crear un disparador (trigger) en SQL?",
+          "opciones": ["CREATE TRIGGER", "TRIGGER", "ADD TRIGGER", "MAKE TRIGGER"],
+          "correcta": "CREATE TRIGGER"
+        },
+        {
+          "id": 38,
+          "pregunta": "¿Qué comando se usa para eliminar un disparador (trigger) en SQL?",
+          "opciones": ["DROP TRIGGER", "REMOVE TRIGGER", "DELETE TRIGGER", "ALTER TRIGGER"],
+          "correcta": "DROP TRIGGER"
+        },
+        {
+          "id": 39,
+          "pregunta": "¿Qué comando se usa para realizar una copia de seguridad de una base de datos en SQL?",
+          "opciones": ["BACKUP DATABASE", "COPY DATABASE", "SAVE DATABASE", "EXPORT DATABASE"],
+          "correcta": "BACKUP DATABASE"
+        },
+        {
+          "id": 40,
+          "pregunta": "¿Qué comando se usa para restaurar una base de datos desde una copia de seguridad en SQL?",
+          "opciones": ["RESTORE DATABASE", "RECOVER DATABASE", "IMPORT DATABASE", "LOAD DATABASE"],
+          "correcta": "RESTORE DATABASE"
+        }
+      ]
+    },
+    {
+      "nombre": "Seguridad informática",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Qué es la autenticación en seguridad informática?",
+          "opciones": [
+            "Verificar la identidad de un usuario",
+            "Proteger datos de acceso",
+            "Encriptar información",
+            "Detectar intrusiones"
+          ],
+          "correcta": "Verificar la identidad de un usuario"
+        },
+        {
+          "id": 2,
+          "pregunta": "¿Qué es la autorización en seguridad informática?",
+          "opciones": [
+            "Controlar el acceso a recursos",
+            "Proteger datos de acceso",
+            "Encriptar información",
+            "Detectar intrusiones"
+          ],
+          "correcta": "Controlar el acceso a recursos"
+        },
+        {
+          "id": 3,
+          "pregunta": "¿Qué es un ataque de denegación de servicio (DDoS)?",
+          "opciones": [
+            "Sobrecargar un servidor con solicitudes",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Sobrecargar un servidor con solicitudes"
+        },
+        {
+          "id": 4,
+          "pregunta": "¿Qué es la encriptación de datos?",
+          "opciones": [
+            "Convertir información en un formato seguro",
+            "Detectar intrusiones en una red",
+            "Proteger datos de acceso",
+            "Controlar el acceso a recursos"
+          ],
+          "correcta": "Convertir información en un formato seguro"
+        },
+        {
+          "id": 5,
+          "pregunta": "¿Qué es un cortafuegos (firewall) en seguridad informática?",
+          "opciones": [
+            "Un sistema que controla el tráfico de red",
+            "Un software antivirus",
+            "Un sistema de autenticación",
+            "Un sistema de encriptación"
+          ],
+          "correcta": "Un sistema que controla el tráfico de red"
+        },
+        {
+          "id": 6,
+          "pregunta": "¿Qué es un certificado SSL?",
+          "opciones": [
+            "Un certificado de seguridad para sitios web",
+            "Un sistema de autenticación",
+            "Un sistema de encriptación",
+            "Un software antivirus"
+          ],
+          "correcta": "Un certificado de seguridad para sitios web"
+        },
+        {
+          "id": 7,
+          "pregunta": "¿Qué es la ingeniería social en seguridad informática?",
+          "opciones": [
+            "Engañar a usuarios para obtener información confidencial",
+            "Detectar intrusiones en una red",
+            "Proteger datos de acceso",
+            "Controlar el acceso a recursos"
+          ],
+          "correcta": "Engañar a usuarios para obtener información confidencial"
+        },
+        {
+          "id": 8,
+          "pregunta": "¿Qué es un ataque de phishing?",
+          "opciones": [
+            "Engañar a usuarios para obtener información confidencial",
+            "Sobrecargar un servidor con solicitudes",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Engañar a usuarios para obtener información confidencial"
+        },
+        {
+          "id": 9,
+          "pregunta": "¿Qué es un ataque de ransomware?",
+          "opciones": [
+            "Bloquear el acceso a un sistema y pedir un rescate",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Bloquear el acceso a un sistema y pedir un rescate"
+        },
+        {
+          "id": 10,
+          "pregunta": "¿Qué es un ataque de inyección de SQL?",
+          "opciones": [
+            "Insertar código malicioso en una consulta SQL",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Insertar código malicioso en una consulta SQL"
+        },
+        {
+          "id": 11,
+          "pregunta": "¿Qué es un ataque de fuerza bruta?",
+          "opciones": [
+            "Probar todas las combinaciones posibles para obtener acceso",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Probar todas las combinaciones posibles para obtener acceso"
+        },
+        {
+          "id": 12,
+          "pregunta": "¿Qué es un ataque de sniffing?",
+          "opciones": [
+            "Interceptar y leer datos de una red",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Interceptar y leer datos de una red"
+        },
+        {
+          "id": 13,
+          "pregunta": "¿Qué es un ataque de malware?",
+          "opciones": [
+            "Software malicioso que infecta un sistema",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Software malicioso que infecta un sistema"
+        },
+        {
+          "id": 14,
+          "pregunta": "¿Qué es un ataque de spoofing?",
+          "opciones": [
+            "Fingir ser otra persona o sistema",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Fingir ser otra persona o sistema"
+        },
+        {
+          "id": 15,
+          "pregunta": "¿Qué es un certificado digital?",
+          "opciones": [
+            "Un certificado de identidad en línea",
+            "Un sistema de autenticación",
+            "Un sistema de encriptación",
+            "Un software antivirus"
+          ],
+          "correcta": "Un certificado de identidad en línea"
+        },
+        {
+          "id": 16,
+          "pregunta": "¿Qué es un ataque de XSS (Cross-Site Scripting)?",
+          "opciones": [
+            "Insertar código malicioso en un sitio web",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Insertar código malicioso en un sitio web"
+        },
+        {
+          "id": 17,
+          "pregunta": "¿Qué es un ataque de CSRF (Cross-Site Request Forgery)?",
+          "opciones": [
+            "Engañar a un usuario para realizar acciones no deseadas",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Engañar a un usuario para realizar acciones no deseadas"
+        },
+        {
+          "id": 18,
+          "pregunta": "¿Qué es un ataque de MITM?", 
+          "opciones": [
+            "Interceptar y modificar comunicaciones entre dos partes",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Interceptar y modificar comunicaciones entre dos partes"
+        },
+        {
+          "id": 19,
+          "pregunta": "¿Qué es un ataque de DNS spoofing?",
+          "opciones": [
+            "Falsificar respuestas de servidores DNS",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Falsificar respuestas de servidores DNS"
+        },
+        {
+          "id": 20,
+          "pregunta": "¿Qué es un ataque de ransomware?",
+          "opciones": [
+            "Bloquear el acceso a un sistema y pedir un rescate",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Bloquear el acceso a un sistema y pedir un rescate"
+          
+        },
+        {
+          "id": 21,
+          "pregunta": "¿Qué es un ataque de inyección de código?",
+          "opciones": [
+            "Insertar código malicioso en una aplicación",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Insertar código malicioso en una aplicación"
+        },
+        {
+          "id": 22,
+          "pregunta": "¿Qué es un ataque de fuerza bruta?",
+          "opciones": [
+            "Probar todas las combinaciones posibles para obtener acceso",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Probar todas las combinaciones posibles para obtener acceso"
+        },
+        {
+          "id": 23,
+          "pregunta": "¿Qué es un ataque de phishing?",
+          "opciones": [
+            "Engañar a usuarios para obtener información confidencial",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Engañar a usuarios para obtener información confidencial"
+        },
+        {
+          "id": 24,
+          "pregunta": "¿Qué es un ataque de malware?",
+          "opciones": [
+            "Software malicioso que infecta un sistema",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Software malicioso que infecta un sistema"
+        },
+        {
+          "id": 25,
+          "pregunta": "¿Qué es un ataque de ransomware?",
+          "opciones": [
+            "Bloquear el acceso a un sistema y pedir un rescate",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Bloquear el acceso a un sistema y pedir un rescate"
+        },
+        {
+          "id": 26,
+          "pregunta": "¿Qué es un ataque de spoofing?",
+          "opciones": [
+            "Fingir ser otra persona o sistema",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Fingir ser otra persona o sistema"
+        },
+        {
+          "id": 27,
+          "pregunta": "¿Qué es un ataque de sniffing?",
+          "opciones": [
+            "Interceptar y leer datos de una red",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Interceptar y leer datos de una red"
+        },
+        {
+          "id": 28,
+          "pregunta": "¿Qué es un ataque de inyección de SQL?",
+          "opciones": [
+            "Insertar código malicioso en una consulta SQL",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Insertar código malicioso en una consulta SQL"
+        },
+        {
+          "id": 29,
+          "pregunta": "¿Qué es un ataque de fuerza bruta?",
+          "opciones": [
+            "Probar todas las combinaciones posibles para obtener acceso",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Probar todas las combinaciones posibles para obtener acceso"
+        },
+        {
+          "id": 30,
+          "pregunta": "¿Qué es un ataque de phishing?",
+          "opciones": [
+            "Engañar a usuarios para obtener información confidencial",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Engañar a usuarios para obtener información confidencial"
+        },
+        {
+          "id": 31,
+          "pregunta": "¿Qué es un ataque de ransomware?",
+          "opciones": [
+            "Bloquear el acceso a un sistema y pedir un rescate",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Bloquear el acceso a un sistema y pedir un rescate"
+        },
+        {
+          "id": 32,
+          "pregunta": "¿Qué es un ataque de malware?",
+          "opciones": [
+            "Software malicioso que infecta un sistema",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Software malicioso que infecta un sistema"
+        },
+        {
+          "id": 33,
+          "pregunta": "¿Qué es un ataque de spoofing?",
+          "opciones": [
+            "Fingir ser otra persona o sistema",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Fingir ser otra persona o sistema"
+        },
+        {
+          "id": 34,
+          "pregunta": "¿Qué es un ataque de sniffing?",
+          "opciones": [
+            "Interceptar y leer datos de una red",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Interceptar y leer datos de una red"
+        },
+        {
+          "id": 35,
+          "pregunta": "¿Qué es un ataque de inyección de SQL?",
+          "opciones": [
+            "Insertar código malicioso en una consulta SQL",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Insertar código malicioso en una consulta SQL"
+        },
+        {
+          "id": 36,
+          "pregunta": "¿Qué es un ataque de fuerza bruta?",
+          "opciones": [
+            "Probar todas las combinaciones posibles para obtener acceso",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Probar todas las combinaciones posibles para obtener acceso"
+        },
+        {
+          "id": 37,
+          "pregunta": "¿Qué es un ataque de phishing?",
+          "opciones": [
+            "Engañar a usuarios para obtener información confidencial",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Engañar a usuarios para obtener información confidencial"
+        },
+        {
+          "id": 38,
+          "pregunta": "¿Qué es un ataque de ransomware?",
+          "opciones": [
+            "Bloquear el acceso a un sistema y pedir un rescate",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Bloquear el acceso a un sistema y pedir un rescate"
+        },
+        {
+          "id": 39,
+          "pregunta": "¿Qué es un ataque de malware?",
+          "opciones": [
+            "Software malicioso que infecta un sistema",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Software malicioso que infecta un sistema"
+        },
+        {
+          "id": 40,
+          "pregunta": "¿Qué es un ataque de spoofing?",
+          "opciones": [
+            "Fingir ser otra persona o sistema",
+            "Robar información de un sistema",
+            "Modificar datos de un usuario",
+            "Acceder a una red sin autorización"
+          ],
+          "correcta": "Fingir ser otra persona o sistema"
+        }
+      ]
+    },
+    {
+      "nombre": "Inteligencia artificial",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Qué es la inteligencia artificial?",
+          "opciones": [
+            "Simulación de procesos de inteligencia humana por máquinas",
+            "Un tipo de lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Simulación de procesos de inteligencia humana por máquinas"
+        },
+        {
+          "id": 2,
+          "pregunta": "¿Qué es el aprendizaje automático (machine learning)?",
+          "opciones": [
+            "Capacidad de las máquinas para aprender sin ser programadas explícitamente",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Capacidad de las máquinas para aprender sin ser programadas explícitamente"
+        },
+        {
+          "id": 3,
+          "pregunta": "¿Qué es la visión por computadora?",
+          "opciones": [
+            "Capacidad de las máquinas para interpretar y entender el mundo visual",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Capacidad de las máquinas para interpretar y entender el mundo visual"
+        },
+        {
+          "id": 4,
+          "pregunta": "¿Qué es el procesamiento del lenguaje natural (NLP)?",
+          "opciones": [
+            "Capacidad de las máquinas para entender y generar lenguaje humano",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Capacidad de las máquinas para entender y generar lenguaje humano"
+        },
+        {
+          "id": 5,
+          "pregunta": "¿Qué es un algoritmo de clasificación?",
+          "opciones": [
+            "Un algoritmo que asigna una etiqueta a un conjunto de datos",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Un algoritmo que asigna una etiqueta a un conjunto de datos"
+        },
+        {
+          "id": 6,
+          "pregunta": "¿Qué es un algoritmo de regresión?",
+          "opciones": [
+            "Un algoritmo que predice valores continuos",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Un algoritmo que predice valores continuos"
+        },
+        {
+          "id": 7,
+          "pregunta": "¿Qué es un algoritmo de agrupamiento?",
+          "opciones": [
+            "Un algoritmo que divide un conjunto de datos en grupos",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Un algoritmo que divide un conjunto de datos en grupos"
+        },
+        {
+          "id": 8,
+          "pregunta": "¿Qué es un modelo de aprendizaje profundo (deep learning)?",
+          "opciones": [
+            "Un modelo de inteligencia artificial con múltiples capas",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Un modelo de inteligencia artificial con múltiples capas"
+        },
+        {
+          "id": 9,
+          "pregunta": "¿Qué es un conjunto de datos de entrenamiento?",
+          "opciones": [
+            "Datos utilizados para entrenar un modelo de aprendizaje automático",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Datos utilizados para entrenar un modelo de aprendizaje automático"
+        },
+        {
+          "id": 10,
+          "pregunta": "¿Qué es un conjunto de datos de prueba?",
+          "opciones": [
+            "Datos utilizados para evaluar el rendimiento de un modelo",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Datos utilizados para evaluar el rendimiento de un modelo"
+        },
+        {
+          "id": 11,
+          "pregunta": "¿Qué es la precisión de un modelo de aprendizaje automático?",
+          "opciones": [
+            "La proporción de predicciones correctas",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "La proporción de predicciones correctas"
+        },
+        {
+          "id": 12,
+          "pregunta": "¿Qué es el sesgo en un modelo de aprendizaje automático?",
+          "opciones": [
+            "Error sistemático que impide que el modelo aprenda la verdadera relación entre variables",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Error sistemático que impide que el modelo aprenda la verdadera relación entre variables"
+        },
+        {
+          "id": 13,
+          "pregunta": "¿Qué es la varianza en un modelo de aprendizaje automático?",
+          "opciones": [
+            "Sensibilidad del modelo a pequeñas variaciones en los datos de entrenamiento",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Sensibilidad del modelo a pequeñas variaciones en los datos de entrenamiento"
+        },
+        {
+          "id": 14,
+          "pregunta": "¿Qué es el sobreajuste (overfitting) en un modelo de aprendizaje automático?",
+          "opciones": [
+            "Cuando el modelo se ajusta demasiado a los datos de entrenamiento",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Cuando el modelo se ajusta demasiado a los datos de entrenamiento"
+        },
+        {
+          "id": 15,
+          "pregunta": "¿Qué es el subajuste (underfitting) en un modelo de aprendizaje automático?",
+          "opciones": [
+            "Cuando el modelo es demasiado simple para capturar la estructura subyacente de los datos",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Cuando el modelo es demasiado simple para capturar la estructura subyacente de los datos"
+        },
+        {
+          "id": 16,
+          "pregunta": "¿Qué es la validación cruzada (cross-validation) en aprendizaje automático?",
+          "opciones": [
+            "Técnica para evaluar el rendimiento de un modelo",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Técnica para evaluar el rendimiento de un modelo"
+        },
+        {
+          "id": 17,
+          "pregunta": "¿Qué es la selección de características en aprendizaje automático?",
+          "opciones": [
+            "Proceso de elegir las variables más relevantes para un modelo",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Proceso de elegir las variables más relevantes para un modelo"
+        },
+        {
+          "id": 18,
+          "pregunta": "¿Qué es la ingeniería de características en aprendizaje automático?",
+          "opciones": [
+            "Proceso de crear nuevas variables a partir de los datos existe",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Proceso de crear nuevas variables a partir de los datos existentes"
+        },
+        {
+          "id": 19,
+          "pregunta": "¿Qué es el refuerzo (reinforcement learning) en aprendizaje automático?",
+          "opciones": [
+            "Aprendizaje basado en recompensas y castigos",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Aprendizaje basado en recompensas y castigos"
+        },
+        {
+          "id": 20,
+          "pregunta": "¿Qué es el aprendizaje no supervisado en aprendizaje automático?",
+          "opciones": [
+            "Aprendizaje sin etiquetas o categorías predefinidas",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Aprendizaje sin etiquetas o categorías predefinidas"
+        },
+        {
+          "id": 21,
+          "pregunta": "¿Qué es el aprendizaje supervisado en aprendizaje automático?",
+          "opciones": [
+            "Aprendizaje con etiquetas o categorías predefinidas",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Aprendizaje con etiquetas o categorías predefinidas"
+        },
+        {
+          "id": 22,
+          "pregunta": "¿Qué es el aprendizaje por transferencia en aprendizaje automático?",
+          "opciones": [
+            "Utilizar un modelo preentrenado para una tarea similar",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Utilizar un modelo preentrenado para una tarea similar"
+        },
+        {
+          "id": 23,
+          "pregunta": "¿Qué es el aprendizaje profundo (deep learning)?",
+          "opciones": [
+            "Un subcampo de la inteligencia artificial que utiliza redes neuronales",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Un subcampo de la inteligencia artificial que utiliza redes neuronales"
+        },
+        {
+          "id": 24,
+          "pregunta": "¿Qué es una red neuronal artificial?",
+          "opciones": [
+            "Modelo computacional inspirado en el cerebro humano",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Modelo computacional inspirado en el cerebro humano"
+        },
+        {
+          "id": 25,
+          "pregunta": "¿Qué es una capa oculta en una red neuronal?",
+          "opciones": [
+            "Capa intermedia entre la entrada y la salida de la red",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Capa intermedia entre la entrada y la salida de la red"
+        },
+        {
+          "id": 26,
+          "pregunta": "¿Qué es una función de activación en una red neuronal?",
+          "opciones": [
+            "Función que determina la salida de una neurona",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Función que determina la salida de una neurona"
+        },
+        {
+          "id": 27,
+          "pregunta": "¿Qué es el descenso del gradiente (gradient descent) en aprendizaje automático?",
+          "opciones": [
+            "Algoritmo para minimizar la función de pérdida de un modelo",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Algoritmo para minimizar la función de pérdida de un modelo"
+        },
+        {
+          "id": 28,
+          "pregunta": "¿Qué es la función de pérdida en aprendizaje automático?",
+          "opciones": [
+            "Función que mide la discrepancia entre las predicciones y los valores reales",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Función que mide la discrepancia entre las predicciones y los valores reales"
+        },
+        {
+          "id": 29,
+          "pregunta": "¿Qué es la regularización en aprendizaje automático?",
+          "opciones": [
+            "Técnica para prevenir el sobreajuste de un modelo",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Técnica para prevenir el sobreajuste de un modelo"
+        },
+        {
+          "id": 30,
+          "pregunta": "¿Qué es el aprendizaje por refuerzo en aprendizaje automático?",
+          "opciones": [
+            "Aprendizaje basado en recompensas y castigos",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Aprendizaje basado en recompensas y castigos"
+
+        },
+        {
+          "id": 31,
+          "pregunta": "¿Qué es el aprendizaje no supervisado en aprendizaje automático?",
+          "opciones": [
+            "Aprendizaje sin etiquetas o categorías predefinidas",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Aprendizaje sin etiquetas o categorías predefinidas"
+        },
+        {
+          "id": 32,
+          "pregunta": "¿Qué es el aprendizaje supervisado en aprendizaje automático?",
+          "opciones": [
+            "Aprendizaje con etiquetas o categorías predefinidas",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Aprendizaje con etiquetas o categorías predefinidas"
+        },
+        {
+          "id": 33,
+          "pregunta": "¿Qué es el aprendizaje por transferencia en aprendizaje automático?",
+          "opciones": [
+            "Utilizar un modelo preentrenado para una tarea similar",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Utilizar un modelo preentrenado para una tarea similar"
+        },
+        {
+          "id": 34,
+          "pregunta": "¿Qué es el aprendizaje profundo (deep learning)?",
+          "opciones": [
+            "Un subcampo de la inteligencia artificial que utiliza redes neuronales",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Un subcampo de la inteligencia artificial que utiliza redes neuronales"
+        },
+        {
+          "id": 35,
+          "pregunta": "¿Qué es una red neuronal artificial?",
+          "opciones": [
+            "Modelo computacional inspirado en el cerebro humano",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Modelo computacional inspirado en el cerebro humano"
+        },
+        {
+          "id": 36,
+          "pregunta": "¿Qué es una capa oculta en una red neuronal?",
+          "opciones": [
+            "Capa intermedia entre la entrada y la salida de la red",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Capa intermedia entre la entrada y la salida de la red"
+        },
+        {
+          "id": 37,
+          "pregunta": "¿Qué es una función de activación en una red neuronal?",
+          "opciones": [
+            "Función que determina la salida de una neurona",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Función que determina la salida de una neurona"
+        },
+        {
+          "id": 38,
+          "pregunta": "¿Qué es el descenso del gradiente (gradient descent) en aprendizaje automático?",
+          "opciones": [
+            "Algoritmo para minimizar la función de pérdida de un modelo",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Algoritmo para minimizar la función de pérdida de un modelo"
+        },
+        {
+          "id": 39,
+          "pregunta": "¿Qué es la función de pérdida en aprendizaje automático?",
+          "opciones": [
+            "Función que mide la discrepancia entre las predicciones y los valores reales",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Función que mide la discrepancia entre las predicciones y los valores reales"
+        },
+        {
+          "id": 40,
+          "pregunta": "¿Qué es la regularización en aprendizaje automático?",
+          "opciones": [
+            "Técnica para prevenir el sobreajuste de un modelo",
+            "Un lenguaje de programación",
+            "Un sistema de bases de datos",
+            "Un modelo de desarrollo web"
+          ],
+          "correcta": "Técnica para prevenir el sobreajuste de un modelo"
         }
       ]
     }
