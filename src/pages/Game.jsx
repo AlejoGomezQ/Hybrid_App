@@ -66,7 +66,9 @@ const GamePage = () => {
           : "bg-gray-100"
       }`}
     >
+      <div className="mb-15">
       <HeaderGame score={score} />
+      </div>
       <div className="relative mb-1">
         <Timer onLose={handleLose} reset={resetTimer} />
       </div>
