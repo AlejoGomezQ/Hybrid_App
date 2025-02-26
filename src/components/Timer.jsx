@@ -21,7 +21,7 @@ const Timer = ({ onLose, reset }) => {
     }, [seconds, onLose]);
 
     return (
-        <div className="absolute left-1/2 -translate-x-1/2 -top-4 bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-md">
+        <div className="absolute left-1/2 -translate-x-1/2 -top-11 bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-md">
             <span className="font-bold">{seconds}</span>
         </div>
     );

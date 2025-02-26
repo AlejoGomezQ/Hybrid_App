@@ -67,7 +67,7 @@ const GamePage = () => {
       }`}
     >
       <HeaderGame score={score} />
-      <div className="relative mb-14">
+      <div className="relative mb-1">
         <Timer onLose={handleLose} reset={resetTimer} />
       </div>
       <div
