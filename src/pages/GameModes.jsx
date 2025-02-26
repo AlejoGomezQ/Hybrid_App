@@ -26,7 +26,6 @@ const GameModesPage = () => {
                 return <IconSeguridad /> 
             case "Inteligencia artificial":
                 return <IconIA />       
-
             default:
                 return null
         }

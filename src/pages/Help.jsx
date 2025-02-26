@@ -1,22 +1,35 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { ArrowLeft } from 'lucide-react';
 import { Wildcard50} from "../components/Wildcards"
 
 const HelpPage = () => {
+    const navigate = useNavigate();
+    
+    const handleClick = () => {
+        navigate("/game-modes");
+    };
+
     return (
         <div className="max-w-md mx-auto px-4 py-6 h-screen bg-gray-300">
-            <h1 className="mb-6 text-xl font-bold text-center font-inter text-[30px]">¿CÓMO JUGAR?</h1>
-            
-            <div className="h-full rounded-xl bg-white p-6 flex flex-col justify-between">
+
+            <div className="flex items-center justify-center space-x-8 mb-2 mr-14">
+
+                <button onClick={handleClick} className="p-2 bg-white rounded-full cursor-pointer">
+                    <ArrowLeft className="w-6 h-6" />
+                </button>
+                
+                <h1 className="mb-2 text-xl font-bold text-center font-inter text-[30px]">¿CÓMO JUGAR?</h1>
+            </div>
+
+            <div className="h-[90%] rounded-xl bg-white p-6 flex flex-col justify-between">
                 <div>
-                    <p className="text-gray-700 text-base mb-4">
-                    Bienvenido a nuestro juego innovador de preguntas y respuestas 
-                    con enfoque en la tecnología.<br /><br />
-                    Aquí podrás poner a prueba tus conocimientos en áreas como Frontend, Backend y 
-                    Base de Datos.
+                    <p className="text-gray-700 text-base mb-1">
+                    Bienvenido a nuestro juego de preguntas y respuestas tecnológicas. 
+                    Pon a prueba tus conocimientos en Frontend, Backend y Base de Datos.
                     </p>
 
-                    <h1 className="mb-6 text-xl font-bold text-center">Instrucciones</h1>
+                    <h1 className="mt-1 text-xl font-bold text-center">Instrucciones</h1>
 
                     <ol className="list-decimal list-inside space-y-2 text-gray-700 text-base">
                         <li>Selecciona una categoría en la pantalla principal.</li>
@@ -50,17 +63,12 @@ const HelpPage = () => {
                         <li>Si fallas, podrás intentarlo en la siguiente ronda.</li>
                     </ol>
 
-                    <h3 className="mt-6 text-xl font-bold text-center">
+                    <h3 className="mt-3 text-xl font-bold text-center">
                         <b>¡Diviértete y aprende mientras juegas!</b>
                     </h3>
                     
                 </div>
-{/* 
-                <div className="mt-6 text-center">
-                    <Link to="/" className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600">
-                        Volver al inicio
-                    </Link>
-                </div> */}
+
             </div>
         </div>
     );
