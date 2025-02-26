@@ -2,8 +2,10 @@ function Input(props) {
     return (
         <input
             {...props}
-            className="w-2xs rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+            className={`w-full rounded-lg bg-white/30 px-4 py-2 text-base text-white placeholder-white/70 border-2 border-white/50 outline-none focus:border-white/100 transition-all duration-300`}
         />
-    );
+    )
 }
-export default Input;
+
+export default Input
+
