@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect, useCallback } from "react"
 import { useParams } from "react-router-dom"
 import Timer from "../components/Timer"
@@ -55,30 +57,25 @@ const GamePage = () => {
   }
 
   return (
-    <div
-      className={`relative max-w-md mx-auto min-h-screen p-4 transition-all ${showLosePopUp
-          ? "bg-gray-900 bg-opacity-70 backdrop-blur-md"
-          : "bg-gray-100"
-        }`}
-    >
-      <div className="mb-15">
-        <HeaderGame score={score} />
-      </div>
-      <div className="relative mb-1">
-        <Timer onLose={handleLose} reset={resetTimer} />
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
       <div
-        className={`${showLosePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
+        className={`relative max-w-md mx-auto transition-all ${showLosePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
           }`}
       >
-        <div className="bg-gray-300 p-6 rounded-lg mb-6 min-h-[120px] flex items-center justify-center">
+        <div className="mb-15">
+          <HeaderGame score={score} />
+        </div>
+        <div className="relative mb-1 z-50">
+          <Timer onLose={handleLose} reset={resetTimer} />
+        </div>
+        <div className="bg-white/20 backdrop-blur-md p-6 mt-24 rounded-lg mb-6 min-h-[120px] flex items-center justify-center">
           {currentQuestion ? (
             <span className="text-lg font-bold text-center text-white">{currentQuestion.pregunta}</span>
           ) : (
             <span className="text-lg text-white/70">Cargando pregunta...</span>
           )}
         </div>
-        <div className="flex- flex-col gap-4">
+        <div className="flex flex-col gap-4">
           {currentQuestion?.opciones.map((opcion, index) => (
             <button
               key={index}
