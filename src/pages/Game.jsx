@@ -63,7 +63,7 @@ const GamePage = () => {
         <div className="mb-15">
           <HeaderGame score={score} />
         </div>
-        <div className="relative mb-1 z-50">
+        <div className="relative mb-1 z-10">
           <Timer onLose={handleLose} reset={resetTimer} />
         </div>
         <div className="bg-white/20 backdrop-blur-md p-6 mt-24 rounded-lg mb-6 min-h-[120px] flex items-center justify-center">
@@ -103,7 +103,7 @@ const GamePage = () => {
         />
       </div>
       {showLosePopUp && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
+        <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 backdrop-blur-lg">
           <LosePopUp onClose={loadRandomQuestion} />
         </div>
       )}

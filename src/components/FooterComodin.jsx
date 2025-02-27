@@ -78,7 +78,7 @@ function FooterComodin({ currentQuestion, setCurrentQuestion, loadRandomQuestion
       </footer>
 
       {showPopup && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center">
+        <div className="fixed inset-0 bg-opacity-80 backdrop-blur-lg flex items-center justify-center z-50">
           <ComodinPopUp respuesta={currentQuestion.correcta} onClose={() => setShowPopup(false)} />
         </div>
       )}
