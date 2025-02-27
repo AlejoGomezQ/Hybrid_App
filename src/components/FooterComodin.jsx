@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Shuffle, Repeat2, View } from "lucide-react"
 import { useState } from "react"
 import ComodinPopUp from "@/pages/PopUp/Comodin"
