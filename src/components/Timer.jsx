@@ -4,22 +4,22 @@ import { useState, useEffect } from "react"
 const Timer = ({ onLose, reset }) => {
     const [seconds, setSeconds] = useState(30)
 
-    useEffect(() => {
-        setSeconds(30)
-    }, [reset])
-
-    useEffect(() => {
-        if (seconds === 0) {
-            onLose()
-            return
-        }
-
-        const timerId = setTimeout(() => {
-            setSeconds((prev) => prev - 1)
-        }, 1000)
-
-        return () => clearTimeout(timerId)
-    }, [seconds, onLose])
+    /*     useEffect(() => {
+            setSeconds(30)
+        }, [reset])
+    
+        useEffect(() => {
+            if (seconds === 0) {
+                onLose()
+                return
+            }
+    
+            const timerId = setTimeout(() => {
+                setSeconds((prev) => prev - 1)
+            }, 1000)
+    
+            return () => clearTimeout(timerId)
+        }, [seconds, onLose]) */
 
     const getTimerColor = () => {
         if (seconds <= 5) {

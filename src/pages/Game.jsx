@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect, useCallback } from "react"
 import { useParams } from "react-router-dom"
 import Timer from "../components/Timer"
@@ -97,7 +95,7 @@ const GamePage = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-6 left-0 right-0 max-w-md mx-auto px-10">
+      <div className="fixed bottom-6 left-0 right-0 max-w-md mx-auto">
         <FoooterComodin
           currentQuestion={currentQuestion}
           setCurrentQuestion={setCurrentQuestion}
