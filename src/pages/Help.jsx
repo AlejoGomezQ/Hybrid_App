@@ -1,77 +1,72 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { ArrowLeft } from 'lucide-react';
-import { Wildcard50} from "../components/Wildcards"
+import { useNavigate } from "react-router-dom"
+import { ArrowLeft } from "lucide-react"
+import { Wildcard50 } from "../components/Wildcards"
 
 const HelpPage = () => {
-    const navigate = useNavigate();
-    
+    const navigate = useNavigate()
+
     const handleClick = () => {
-        navigate("/game-modes");
-    };
+        navigate("/game-modes")
+    }
 
     return (
-        <div className="max-w-md mx-auto px-4 py-6 h-screen bg-gray-300">
+        <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
+            <div className="max-w-md mx-auto">
+                <div className="flex items-center justify-between mb-6">
+                    <button
+                        onClick={handleClick}
+                        className="p-2 bg-white/20 hover:bg-white/30 rounded-full cursor-pointer transition-colors duration-300"
+                    >
+                        <ArrowLeft className="w-6 h-6 text-white" />
+                    </button>
+                    <h1 className="text-3xl font-bold text-white">¿CÓMO JUGAR?</h1>
+                    <div className="w-10"></div> {/* Spacer for alignment */}
+                </div>
 
-            <div className="flex items-center justify-center space-x-8 mb-2 mr-14">
-
-                <button onClick={handleClick} className="p-2 bg-white rounded-full cursor-pointer">
-                    <ArrowLeft className="w-6 h-6" />
-                </button>
-                
-                <h1 className="mb-2 text-xl font-bold text-center font-inter text-[30px]">¿CÓMO JUGAR?</h1>
-            </div>
-
-            <div className="h-[90%] rounded-xl bg-white p-6 flex flex-col justify-between">
-                <div>
-                    <p className="text-gray-700 text-base mb-1">
-                    Bienvenido a nuestro juego de preguntas y respuestas tecnológicas. 
-                    Pon a prueba tus conocimientos en Frontend, Backend y Base de Datos.
-                    </p>
-
-                    <h1 className="mt-1 text-xl font-bold text-center">Instrucciones</h1>
-
-                    <ol className="list-decimal list-inside space-y-2 text-gray-700 text-base">
-                        <li>Selecciona una categoría en la pantalla principal.</li>
-                        <li>Responde cada pregunta antes de que el tiempo termine.</li>
-                    </ol>
-
-                    <h2 className="mt-4 mb-2 text-lg font-bold">Comodines</h2>
-                    <p className="text-gray-700 text-base mb-4">
-                        Durante el juego tendras disponible:
+                <div className="bg-white/20 backdrop-blur-md rounded-xl p-6 space-y-6 text-white">
+                    <p>
+                        Bienvenido a nuestro juego de preguntas y respuestas tecnológicas. Pon a prueba tus conocimientos en
+                        Frontend, Backend y Base de Datos.
                     </p>
 
                     <div>
-                        <ul className="list-disc list-inside space-y-2 text-gray-700 text-base">
-                            <li className="flex items-center space-x-16">
-                                <Wildcard50 />
+                        <h2 className="text-2xl font-bold mb-2">Instrucciones</h2>
+                        <ol className="list-decimal list-inside space-y-2 ml-4">
+                            <li>Selecciona una categoría en la pantalla principal.</li>
+                            <li>Responde cada pregunta antes de que el tiempo termine.</li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h2 className="text-2xl font-bold mb-2">Comodines</h2>
+                        <p className="mb-4">Durante el juego tendrás disponible:</p>
+                        <ul className="space-y-4">
+                            <li className="flex items-center space-x-4">
+                                <Wildcard50 className="w-8 h-8 text-yellow-300" />
                                 <span>Descarta dos opciones.</span>
                             </li>
-                            <li className="flex items-center space-x-16">
-                                <Wildcard50 />
+                            <li className="flex items-center space-x-4">
+                                <Wildcard50 className="w-8 h-8 text-yellow-300" />
                                 <span>Responder la pregunta actual.</span>
                             </li>
-                            <li className="flex items-center space-x-16">
-                                <Wildcard50 />
+                            <li className="flex items-center space-x-4">
+                                <Wildcard50 className="w-8 h-8 text-yellow-300" />
                                 <span>Cambiar la pregunta actual.</span>
                             </li>
                         </ul>
                     </div>
 
-                    <ol className="mt-4 list-decimal list-inside space-y-2 text-gray-700 text-base" start="3">
+                    <ol className="list-decimal list-inside space-y-2 ml-4" start="3">
                         <li>Obtén puntos por pregunta acertada y visualiza tu récord de puntos acumulados.</li>
                         <li>Si fallas, podrás intentarlo en la siguiente ronda.</li>
                     </ol>
 
-                    <h3 className="mt-3 text-xl font-bold text-center">
-                        <b>¡Diviértete y aprende mientras juegas!</b>
-                    </h3>
-                    
+                    <h3 className="text-2xl font-bold text-center text-yellow-300">¡Diviértete y aprende mientras juegas!</h3>
                 </div>
-
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default HelpPage;
+export default HelpPage
+
