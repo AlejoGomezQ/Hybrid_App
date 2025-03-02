@@ -15,6 +15,14 @@ const GamePage = () => {
   const [showLosePopUp, setShowLosePopUp] = useState(false)
   const [resetTimer, setResetTimer] = useState(false)
 
+  // Cargar puntaje desde localStorage al iniciar
+  useEffect(() => {
+    const storedScore = localStorage.getItem("puntaje");
+    if (storedScore) {
+      setScore(parseInt(storedScore, 10));
+    }
+  }, []);
+
   const loadRandomQuestion = useCallback(() => {
     const categoryData = questionData.categorias.find((cat) => cat.nombre.toLowerCase() === category)
     if (categoryData) {
@@ -35,11 +43,18 @@ const GamePage = () => {
     setSelectedAnswer(answer)
     setShowResult(true)
     if (answer === currentQuestion.correcta) {
-      setScore((prevScore) => prevScore + 10)
+      // Calcular nuevo puntaje y guardar en localStorage
+      setScore((prevScore) => {
+        const newScore = prevScore + 100;
+        localStorage.setItem("puntaje", newScore); // Guardar en localStorage
+        return newScore;});
       setTimeout(() => {
         handleNextQuestion()
       }, 1000)
     } else {
+      // Reiniciar puntaje a 0
+      setScore(0);
+      localStorage.setItem("puntaje", 0);
       setTimeout(() => {
         setShowLosePopUp(true)
       }, 2000)

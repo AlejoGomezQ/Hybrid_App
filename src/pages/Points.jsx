@@ -24,8 +24,10 @@ const PointPage = () => {
                         <ArrowLeft className="w-6 h-6 text-white" />
                     </button>
                     <h1 className="text-3xl font-bold text-white">PUNTOS</h1>
-                    <div className="w-10"></div> {/* Spacer for alignment */}
+                    <div className="w-10"></div> 
                 </div>
+
+                {/* Implementación */}
                 <div>
                     {/* Renderizar ProgressPoints 15 veces */}
                     {progressPointsList.map((index) => (
