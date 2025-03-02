@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom"
-import { ArrowLeft, Shuffle, Repeat2, View } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
+import ProgressPoints from "../components/ProgressPoints";
+import React, { useState } from "react";
 
 const PointPage = () => {
     const navigate = useNavigate()
@@ -7,6 +9,9 @@ const PointPage = () => {
     const handleClick = () => {
         navigate("/game/frontend")
     }
+
+    // Array de 15 elementos para repetir el componente
+    const progressPointsList = Array.from({ length: 15 }, (_, index) => index + 1);
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
@@ -21,6 +26,18 @@ const PointPage = () => {
                     <h1 className="text-3xl font-bold text-white">PUNTOS</h1>
                     <div className="w-10"></div> {/* Spacer for alignment */}
                 </div>
+                <div>
+                    {/* Renderizar ProgressPoints 15 veces */}
+                    {progressPointsList.map((index) => (
+                        <ProgressPoints
+                            key={index}
+                            progress={50} // Puedes ajustar este valor según sea necesario
+                            startNumber={index} // Calcula el número inicial (1, 101, 201, etc.)
+                            endNumber={index * 100} // Calcula el número final (100, 200, 300, etc.)
+                        />
+                    ))}
+                </div>
+                
             </div>
         </div>
     )
