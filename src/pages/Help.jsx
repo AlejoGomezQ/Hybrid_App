@@ -19,7 +19,7 @@ const HelpPage = () => {
                         <ArrowLeft className="w-6 h-6 text-white" />
                     </button>
                     <h1 className="text-3xl font-bold text-white">¿CÓMO JUGAR?</h1>
-                    <div className="w-10"></div> {/* Spacer for alignment */}
+                    <div className="w-10"></div>
                 </div>
 
                 <div className="bg-white/20 backdrop-blur-md rounded-xl p-6 space-y-6 text-white">

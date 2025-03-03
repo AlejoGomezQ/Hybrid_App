@@ -8,7 +8,7 @@ const ProgressPoints = ({ progress, startNumber, endNumber, isActive }) => {
         <div className="relative w-full rounded-full h-6">
           <div
             className={`h-6 rounded-full transition-all duration-300 ${
-                isActive ? "bg-green-500" : "bg-gray-400/50"}`}
+                isActive ? "bg-yellow-300" : ""}`}
             style={{ width: `${progress}%` }}
           ></div>
           <div className="absolute top-0 left-2 text-white font-bold text-sm">

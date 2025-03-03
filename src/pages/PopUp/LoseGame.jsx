@@ -15,7 +15,7 @@ const LosePopUp = () => {
     }, []);
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center p-4 bg-white/20 backdrop-blur-md">
+        <div className="fixed inset-0 flex items-center justify-center p-4 bg-white/20 backdrop-blur-lg">
             <div className="bg-gradient-to-br from-purple-600/90 to-blue-500/90 rounded-xl max-w-md w-full mx-auto p-8 shadow-2xl">
                 <div className="flex flex-col items-center space-y-6">
                     <Avatar className="w-24 h-24 border-4 border-white/50" />

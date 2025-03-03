@@ -5,6 +5,7 @@ import questionData from "../db/question.json"
 import LosePopUp from "./PopUp/LoseGame"
 import FoooterComodin from "../components/FooterComodin"
 import HeaderGame from "../components/HeaderGame"
+import WinGame from "./PopUp/WinGame"
 
 const GamePage = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null)
@@ -15,12 +16,10 @@ const GamePage = () => {
   const [showLosePopUp, setShowLosePopUp] = useState(false)
   const [resetTimer, setResetTimer] = useState(false)
 
-  // Cargar puntaje desde localStorage al iniciar
+  // Inicializar el puntaje en 0 en cada carga
   useEffect(() => {
-    const storedScore = localStorage.getItem("puntaje");
-    if (storedScore) {
-      setScore(parseInt(storedScore, 10));
-    }
+    localStorage.setItem("puntaje", 0);
+    setScore(0);
   }, []);
 
   const loadRandomQuestion = useCallback(() => {
@@ -69,7 +68,7 @@ const GamePage = () => {
     setShowLosePopUp(true)
   }
 
-  return (
+  return score === 1500 ? <WinGame /> : (
     <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
       <div
         className={`relative max-w-md mx-auto transition-all ${showLosePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
