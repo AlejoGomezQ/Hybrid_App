@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import { ArrowLeft } from "lucide-react"
-import { Wildcard50 } from "../components/Wildcards"
+import { ArrowLeft, Shuffle, Repeat2, View } from "lucide-react"
 
 const HelpPage = () => {
     const navigate = useNavigate()
@@ -42,15 +41,15 @@ const HelpPage = () => {
                         <p className="mb-4">Durante el juego tendrás disponible:</p>
                         <ul className="space-y-4">
                             <li className="flex items-center space-x-4">
-                                <Wildcard50 className="w-8 h-8 text-yellow-300" />
+                                <Shuffle className="w-8 h-8 text-white" />
                                 <span>Descarta dos opciones.</span>
                             </li>
                             <li className="flex items-center space-x-4">
-                                <Wildcard50 className="w-8 h-8 text-yellow-300" />
+                                <View className="w-8 h-8 text-white" />
                                 <span>Responder la pregunta actual.</span>
                             </li>
                             <li className="flex items-center space-x-4">
-                                <Wildcard50 className="w-8 h-8 text-yellow-300" />
+                                <Repeat2 className="w-8 h-8 text-white" />
                                 <span>Cambiar la pregunta actual.</span>
                             </li>
                         </ul>
