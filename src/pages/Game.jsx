@@ -2,18 +2,18 @@ import { useState, useEffect, useCallback } from "react"
 import { useParams } from "react-router-dom"
 import Timer from "../components/Timer"
 import questionData from "../db/question.json"
-import LosePopUp from "./PopUp/LoseGame"
+import StadePopUp from "./PopUp/StadeGame"
 import FoooterComodin from "../components/FooterComodin"
 import HeaderGame from "../components/HeaderGame"
-import WinGame from "./PopUp/WinGame"
+
 
 const GamePage = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
   const [showResult, setShowResult] = useState(false)
   const [score, setScore] = useState(0)
-  const { category } = useParams()
-  const [showLosePopUp, setShowLosePopUp] = useState(false)
+  const {category } = useParams()
+  const [showStadePopUp, setShowLosePopUp] = useState(false)
   const [resetTimer, setResetTimer] = useState(false)
 
   // Cargar puntaje desde localStorage al iniciar
@@ -70,10 +70,10 @@ const GamePage = () => {
     setShowLosePopUp(true)
   }
 
-  return score === 1500 ? <WinGame /> : (
+  return score === 1500 ? <StadePopUp /> : (
     <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
       <div
-        className={`relative max-w-md mx-auto transition-all ${showLosePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
+        className={`relative max-w-md mx-auto transition-all ${showStadePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
           }`}
       >
         <div className="mb-15">
@@ -118,9 +118,9 @@ const GamePage = () => {
           loadRandomQuestion={loadRandomQuestion}
         />
       </div>
-      {showLosePopUp && (
+      {showStadePopUp && (
         <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 backdrop-blur-lg">
-          <LosePopUp onClose={loadRandomQuestion} />
+          <StadePopUp onClose={loadRandomQuestion} />
         </div>
       )}
     </div>

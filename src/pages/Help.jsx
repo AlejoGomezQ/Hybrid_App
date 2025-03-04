@@ -24,8 +24,7 @@ const HelpPage = () => {
 
                 <div className="bg-white/20 backdrop-blur-md rounded-xl p-6 space-y-6 text-white">
                     <p>
-                        Bienvenido a nuestro juego de preguntas y respuestas tecnológicas. Pon a prueba tus conocimientos en
-                        Frontend, Backend y Base de Datos.
+                        Bienvenido a nuestro juego de preguntas y respuestas tecnológicas. Pon a prueba tus conocimientos.
                     </p>
 
                     <div>
@@ -55,7 +54,7 @@ const HelpPage = () => {
                         </ul>
                     </div>
 
-                    <ol className="list-decimal list-inside space-y-2 ml-4" start="3">
+                    <ol className="list-decimal list-inside space-y-4 ml-3" start="3">
                         <li>Obtén puntos por pregunta acertada y visualiza tu récord de puntos acumulados.</li>
                         <li>Si fallas, podrás intentarlo en la siguiente ronda.</li>
                     </ol>

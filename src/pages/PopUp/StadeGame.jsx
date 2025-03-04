@@ -1,11 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
 import Button from "@/components/shared/Button";
 import Avatar from "@/components/shared/Avatar";
 import { useNavigate } from "react-router-dom";
 
-const LosePopUp = () => {
+const StadePopUp = () => {
     const [nickname, setNickname] = useState("");
     const navigate = useNavigate();
+    const [puntaje, setpuntaje] = useState(0);
+
+    useEffect(() => {
+        const storedPuntaje = localStorage.getItem("puntaje");
+        if (storedPuntaje){
+            setpuntaje(parseInt(storedPuntaje,10));
+        }
+    }
+    , []);
+
 
     useEffect(() => {
         const storedNickname = localStorage.getItem("nickname");
@@ -13,6 +23,25 @@ const LosePopUp = () => {
             setNickname(storedNickname);
         }
     }, []);
+
+
+    const ChangeStade = (points) => {
+        if (points === 1500) {
+            return (
+                <>
+                    <h1 className="text-white text-3xl font-bold">¡Wow... Ganaste!</h1>
+                    <p className="text-yellow-300 text-xl">Felicitaciones, has podido completar el juego</p>
+                </>
+            );
+        }
+        return (
+            <>
+                <h1 className="text-white text-3xl font-bold">¡Ops... Perdiste!</h1>
+                <p className="text-yellow-300 text-xl">No has podido completar el juego</p>
+            </>
+        );
+    };
+
 
     return (
         <div className="fixed inset-0 flex items-center justify-center p-4 bg-white/20 backdrop-blur-lg">
@@ -22,8 +51,7 @@ const LosePopUp = () => {
                     {nickname && <p className="text-white text-2xl font-semibold">{nickname}</p>}
 
                     <div className="space-y-4 text-center">
-                        <h1 className="text-white text-3xl font-bold">¡Ops... Perdiste!</h1>
-                        <p className="text-yellow-300 text-xl">No has podido completar el juego</p>
+                        {ChangeStade(puntaje)}
                     </div>
 
                     <form onSubmit={(e) => { e.preventDefault(); navigate("/game-modes"); }} className="w-full mt-6">
@@ -40,4 +68,4 @@ const LosePopUp = () => {
     );
 };
 
-export default LosePopUp;
+export default StadePopUp;
