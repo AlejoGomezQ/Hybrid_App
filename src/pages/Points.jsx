@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import { ArrowLeft } from "lucide-react"
+import { X } from "lucide-react"
 import ProgressPoints from "../components/ProgressPoints";
 import React, { useState, useEffect } from "react";
 
@@ -15,8 +15,9 @@ const PointPage = () => {
         }
     }, []);
 
+    // Regresa a la página anterior 
     const handleClick = () => {
-        navigate("/game/frontend")
+        window.history.back(); 
     }
 
     // Array de 15 elementos para repetir el componente
@@ -30,7 +31,7 @@ const PointPage = () => {
                         onClick={handleClick}
                         className="p-2 bg-white/20 hover:bg-white/30 rounded-full cursor-pointer transition-colors duration-300"
                     >
-                        <ArrowLeft className="w-6 h-6 text-white" />
+                        <X className="w-6 h-6 text-white" />
                     </button>
                     <h1 className="text-3xl font-bold text-white">PUNTOS</h1>
                     <div className="w-10"></div> 
