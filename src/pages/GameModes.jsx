@@ -13,6 +13,11 @@ const GameModesPage = () => {
         setCategories(data.categorias)
     }, [])
 
+    // Reinicia el puntaje a 0 en el local storage
+    useEffect(() => {
+        localStorage.setItem("puntaje", "0"); 
+    }, []);
+
     // Función para obtener el ícono correspondiente a cada categoría
     const getIconForCategory = (categoryName) => {
         switch (categoryName) {

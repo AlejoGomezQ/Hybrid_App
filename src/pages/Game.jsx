@@ -16,10 +16,12 @@ const GamePage = () => {
   const [showLosePopUp, setShowLosePopUp] = useState(false)
   const [resetTimer, setResetTimer] = useState(false)
 
-  // Inicializar el puntaje en 0 en cada carga
+  // Cargar puntaje desde localStorage al iniciar
   useEffect(() => {
-    localStorage.setItem("puntaje", 0);
-    setScore(0);
+    const storedScore = localStorage.getItem("puntaje");
+    if (storedScore) {
+      setScore(parseInt(storedScore, 10));
+    }
   }, []);
 
   const loadRandomQuestion = useCallback(() => {
