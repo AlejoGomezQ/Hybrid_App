@@ -3,7 +3,7 @@ import Button from "@/components/shared/Button";
 import Avatar from "@/components/shared/Avatar";
 import { useNavigate } from "react-router-dom";
 
-const StadePopUp = () => {
+const StatePopUp = () => {
     const [nickname, setNickname] = useState("");
     const navigate = useNavigate();
     const [puntaje, setpuntaje] = useState(0);
@@ -27,7 +27,7 @@ const StadePopUp = () => {
 
 
     // Cambiar el texto del popup dependiendo del puntaje
-    const ChangeStade = (points) => {
+    const ChangeState = (points) => {
         if (points === 1500) {
             return (
                 <>
@@ -53,7 +53,7 @@ const StadePopUp = () => {
                     {nickname && <p className="text-white text-2xl font-semibold">{nickname}</p>}
 
                     <div className="space-y-4 text-center">
-                        {ChangeStade(puntaje)}
+                        {ChangeState(puntaje)}
                     </div>
 
                     <form onSubmit={(e) => { 
@@ -74,4 +74,4 @@ const StadePopUp = () => {
     );
 };
 
-export default StadePopUp;
+export default StatePopUp;

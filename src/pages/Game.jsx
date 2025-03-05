@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import Timer from "../components/Timer";
 import questionData from "../db/question.json";
-import StadePopUp from "./PopUp/StadeGame";
+import StatePopUp from "./PopUp/StateGame";
 import FoooterComodin from "../components/FooterComodin";
 import HeaderGame from "../components/HeaderGame";
 
@@ -12,7 +12,7 @@ const GamePage = () => {
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
   const { category } = useParams();
-  const [showStadePopUp, setShowLosePopUp] = useState(false);
+  const [showStatePopUp, setShowLosePopUp] = useState(false);
   const [resetTimer, setResetTimer] = useState(false);
 
   // Leer estado de comodines desde localStorage al cargar
@@ -163,12 +163,12 @@ const GamePage = () => {
   };
 
   return score === 1500 ? (
-    <StadePopUp />
+    <StatePopUp />
   ) : (
     <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
       <div
         className={`relative max-w-md mx-auto transition-all ${
-          showStadePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
+          showStatePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
         }`}
       >
         <div className="mb-15">
@@ -228,9 +228,9 @@ const GamePage = () => {
           handleChangeQuestion={handleChangeQuestion}
         />
       </div>
-      {showStadePopUp && (
+      {showStatePopUp && (
         <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 backdrop-blur-lg">
-          <StadePopUp onClose={loadRandomQuestion} />
+          <StatePopUp onClose={loadRandomQuestion} />
         </div>
       )}
     </div>

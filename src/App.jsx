@@ -6,7 +6,7 @@ import GameModesPage from "./pages/GameModes";
 import GamePage from "./pages/Game";
 import HelpPage from "./pages/Help";
 import PointPage from "./pages/Points";
-import StadePopUp from "./pages/PopUp/StadeGame";
+import StatePopUp from "./pages/PopUp/StateGame";
 import ComodinPopUP from "./pages/PopUp/Comodin";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path="/game-puntos" element={<PointPage />} /> 
         <Route path="/game-modes" element={<GameModesPage />} />
         <Route path="/game/:category" element={<GamePage />} />
-        <Route path="/stade-game" element={<StadePopUp />} />
+        <Route path="/stade-game" element={<StatePopUp />} />
         <Route path="/comodin" element={<ComodinPopUP />} />
       </Routes>
     </Router>
