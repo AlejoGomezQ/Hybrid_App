@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const StatePopUp = () => {
     const [nickname, setNickname] = useState("");
     const navigate = useNavigate();
-    const [puntaje, setpuntaje] = useState(0);
+    const [score, setpuntaje] = useState(0);
 
     // Leer el puntaje desde localStorage
     useEffect(() => {
@@ -27,8 +27,10 @@ const StatePopUp = () => {
 
 
     // Cambiar el texto del popup dependiendo del puntaje
-    const ChangeState = (points) => {
-        if (points === 1500) {
+    const ChangeState = (score) => {
+        if (score === 1500) {
+            //si se cambia el score, tambien debes cambiarlo en el archivo pages/Game.
+            //en handleAnswerSelect debes cambiar el newScore al mismo valor de score
             return (
                 <>
                     <h1 className="text-white text-3xl font-bold">¡Wow... Ganaste!</h1>
@@ -53,12 +55,17 @@ const StatePopUp = () => {
                     {nickname && <p className="text-white text-2xl font-semibold">{nickname}</p>}
 
                     <div className="space-y-4 text-center">
-                        {ChangeState(puntaje)}
+                        {ChangeState(score)}
                     </div>
 
                     <form onSubmit={(e) => { 
                         e.preventDefault(); 
                         localStorage.removeItem("timerSeconds");
+                        localStorage.removeItem("puntaje");
+                        localStorage.removeItem("comodinUsado");
+                        localStorage.removeItem("comodinCambioUsado");
+                        localStorage.removeItem("comodinRespuestaUsado");
+                        localStorage.removeItem("currentQuestion");
                         navigate("/game-modes"); 
                     }} className="w-full mt-6">
                         <Button

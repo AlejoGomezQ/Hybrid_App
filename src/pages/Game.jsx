@@ -12,7 +12,7 @@ const GamePage = () => {
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
   const { category } = useParams();
-  const [showStatePopUp, setShowLosePopUp] = useState(false);
+  const [showStatePopUp, setShowPopUp] = useState(false);
   const [resetTimer, setResetTimer] = useState(false);
 
   // Leer estado de comodines desde localStorage al cargar
@@ -49,7 +49,7 @@ const GamePage = () => {
       setSelectedAnswer(null);
       setShowResult(false);
       setResetTimer((prev) => !prev);
-      setShowLosePopUp(false);
+      setShowPopUp(false);
     }
   }, [category]);
 
@@ -82,8 +82,8 @@ const GamePage = () => {
     // Resetear el timer
     setResetTimer((prev) => !prev);
 
-    // Ocultar popup de pérdida
-    setShowLosePopUp(false);
+    // Ocultar estado de popup
+    setShowPopUp(false);
   };
 
   // Manejar la selección de respuesta
@@ -94,17 +94,22 @@ const GamePage = () => {
         const newScore = prevScore + 100;
         localStorage.setItem("puntaje", newScore);
         setShowResult(true);
+        //si se cambia el newScore de 1500, tambien cambiarlo en PopUp/StateGame.jsx
+        if (newScore === 1500) {
+          setShowPopUp(true);
+        } else {
+          setTimeout(() => {
+            handleNextQuestion();
+          }, 1000);
+        }
         return newScore;
       });
-      setTimeout(() => {
-        handleNextQuestion();
-      }, 1000);
     } else {
       // Al perder, resetear todo el juego
       setShowResult(true);
       setTimeout(() => {
         resetGame();
-        setShowLosePopUp(true);
+        setShowPopUp(true);
       }, 1000);
     }
   };
@@ -116,7 +121,7 @@ const GamePage = () => {
 
   // Manejar la pérdida
   const handleLose = () => {
-    setShowLosePopUp(true);
+    setShowPopUp(true);
   };
 
   // Comodin 50/50
@@ -162,9 +167,7 @@ const GamePage = () => {
     setResetTimer(false);
   };
 
-  return score === 1500 ? (
-    <StatePopUp />
-  ) : (
+  return (
     <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
       <div
         className={`relative max-w-md mx-auto transition-all ${
