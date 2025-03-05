@@ -8,6 +8,7 @@ const StadePopUp = () => {
     const navigate = useNavigate();
     const [puntaje, setpuntaje] = useState(0);
 
+    // Leer el puntaje desde localStorage
     useEffect(() => {
         const storedPuntaje = localStorage.getItem("puntaje");
         if (storedPuntaje){
@@ -16,7 +17,7 @@ const StadePopUp = () => {
     }
     , []);
 
-
+    // Leer el nickname desde localStorage
     useEffect(() => {
         const storedNickname = localStorage.getItem("nickname");
         if (storedNickname) {
@@ -25,6 +26,7 @@ const StadePopUp = () => {
     }, []);
 
 
+    // Cambiar el texto del popup dependiendo del puntaje
     const ChangeStade = (points) => {
         if (points === 1500) {
             return (
@@ -54,7 +56,11 @@ const StadePopUp = () => {
                         {ChangeStade(puntaje)}
                     </div>
 
-                    <form onSubmit={(e) => { e.preventDefault(); navigate("/game-modes"); }} className="w-full mt-6">
+                    <form onSubmit={(e) => { 
+                        e.preventDefault(); 
+                        localStorage.removeItem("timerSeconds");
+                        navigate("/game-modes"); 
+                    }} className="w-full mt-6">
                         <Button
                             type="submit"
                             className="w-full bg-white/20 hover:bg-white/30 text-white"
