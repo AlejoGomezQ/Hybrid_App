@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { IconJS, IconPython, IconSQL, IconSeguridad, IconIA} from "../components/Icons"
+import { IconJS, IconPython, IconSQL, IconSeguridad, IconIA } from "../components/Icons"
 import TopicButton from "../components/TopicButton"
 import HeaderGameMode from "../components/HeaderGameMode"
 
@@ -13,6 +13,11 @@ const GameModesPage = () => {
         setCategories(data.categorias)
     }, [])
 
+    // Reinicia el puntaje a 0 en el local storage
+    useEffect(() => {
+        localStorage.setItem("puntaje", "0"); 
+    }, []);
+
     // Función para obtener el ícono correspondiente a cada categoría
     const getIconForCategory = (categoryName) => {
         switch (categoryName) {
@@ -21,11 +26,11 @@ const GameModesPage = () => {
             case "Backend":
                 return <IconPython />
             case "Bases de datos":
-                return <IconSQL /> 
+                return <IconSQL />
             case "Seguridad informática":
-                return <IconSeguridad /> 
+                return <IconSeguridad />
             case "Inteligencia artificial":
-                return <IconIA />       
+                return <IconIA />
             default:
                 return null
         }
@@ -36,8 +41,8 @@ const GameModesPage = () => {
             <div className="flex-1 flex flex-col p-4">
                 <div className="max-w-md mx-auto w-full h-full flex flex-col bg-white/20 rounded-lg shadow-lg p-6 overflow-hidden">
                     <HeaderGameMode />
-                    <h1 className="mb-9 text-2xl font-bold text-center text-white">Elige una categoria</h1>
-                    <div className="flex-1 flex flex-col gap-y-7">
+                    <h1 className="mb-6 text-2xl font-bold text-center text-white">Elige una categoria</h1>
+                    <div className="flex-1 flex flex-col gap-y-5 overflow-y-hidden">
                         {categories.map((category) => (
                             <TopicButton key={category.nombre} icon={getIconForCategory(category.nombre)} name={category.nombre} />
                         ))}

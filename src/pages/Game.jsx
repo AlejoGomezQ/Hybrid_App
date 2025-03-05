@@ -1,106 +1,108 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import Timer from "../components/Timer";
-import questionData from "../db/question.json";
-import LosePopUp from "./PopUp/LoseGame";
-import FoooterComodin from "../components/FooterComodin";
-import HeaderGame from "../components/HeaderGame";
+import { useState, useEffect, useCallback } from "react"
+import { useParams } from "react-router-dom"
+import Timer from "../components/Timer"
+import questionData from "../db/question.json"
+import StadePopUp from "./PopUp/StadeGame"
+import FoooterComodin from "../components/FooterComodin"
+import HeaderGame from "../components/HeaderGame"
+
 
 const GamePage = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(null);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [showResult, setShowResult] = useState(false);
-  const [score, setScore] = useState(0);
-  const {category} = useParams();
-  const [showLosePopUp, setShowLosePopUp] = useState(false);
-  const [resetTimer, setResetTimer] = useState(false);
+  const [currentQuestion, setCurrentQuestion] = useState(null)
+  const [selectedAnswer, setSelectedAnswer] = useState(null)
+  const [showResult, setShowResult] = useState(false)
+  const [score, setScore] = useState(0)
+  const {category } = useParams()
+  const [showStadePopUp, setShowLosePopUp] = useState(false)
+  const [resetTimer, setResetTimer] = useState(false)
 
-  const loadRandomQuestion = () => {
-    const categoryData = questionData.categorias.find(
-      (cat) => cat.nombre.toLowerCase() === category
-    );
-    if (categoryData) {
-      const randomIndex = Math.floor(
-        Math.random() * categoryData.preguntas.length
-      );
-      setCurrentQuestion(categoryData.preguntas[randomIndex]);
-      setSelectedAnswer(null);
-      setShowResult(false);
-      setResetTimer((prev) => !prev);
-      setShowLosePopUp(false);
+  // Cargar puntaje desde localStorage al iniciar
+  useEffect(() => {
+    const storedScore = localStorage.getItem("puntaje");
+    if (storedScore) {
+      setScore(parseInt(storedScore, 10));
     }
-  };
+  }, []);
+
+  const loadRandomQuestion = useCallback(() => {
+    const categoryData = questionData.categorias.find((cat) => cat.nombre.toLowerCase() === category)
+    if (categoryData) {
+      const randomIndex = Math.floor(Math.random() * categoryData.preguntas.length)
+      setCurrentQuestion(categoryData.preguntas[randomIndex])
+      setSelectedAnswer(null)
+      setShowResult(false)
+      setResetTimer((prev) => !prev)
+      setShowLosePopUp(false)
+    }
+  }, [category])
 
   useEffect(() => {
-    loadRandomQuestion();
-  }, [category]);
+    loadRandomQuestion()
+  }, [loadRandomQuestion])
 
   const handleAnswerSelect = (answer) => {
-    setSelectedAnswer(answer);
-    setShowResult(true);
+    setSelectedAnswer(answer)
+    setShowResult(true)
     if (answer === currentQuestion.correcta) {
-      setScore((prevScore) => prevScore + 10);
+      // Calcular nuevo puntaje y guardar en localStorage
+      setScore((prevScore) => {
+        const newScore = prevScore + 100;
+        localStorage.setItem("puntaje", newScore); // Guardar en localStorage
+        return newScore;});
       setTimeout(() => {
-        handleNextQuestion();
-      }, 1000);
+        handleNextQuestion()
+      }, 1000)
     } else {
+      // Reiniciar puntaje a 0
+      setScore(0);
+      localStorage.setItem("puntaje", 0);
       setTimeout(() => {
-        setShowLosePopUp(true);
-      }, 2000);
+        setShowLosePopUp(true)
+      }, 2000)
     }
-  };
+  }
 
   const handleNextQuestion = () => {
-    loadRandomQuestion();
-  };
+    loadRandomQuestion()
+  }
 
   const handleLose = () => {
-    setShowLosePopUp(true);
-  };
+    setShowLosePopUp(true)
+  }
 
-  return (
-    <div
-      className={`relative max-w-md mx-auto min-h-screen p-4 transition-all ${
-        showLosePopUp
-          ? "bg-gray-900 bg-opacity-70 backdrop-blur-md"
-          : "bg-gray-100"
-      }`}
-    >
-      <div className="mb-15">
-      <HeaderGame score={score} />
-      </div>
-      <div className="relative mb-1">
-        <Timer onLose={handleLose} reset={resetTimer} />
-      </div>
+  return score === 1500 ? <StadePopUp /> : (
+    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
       <div
-        className={`${
-          showLosePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
-        }`}
+        className={`relative max-w-md mx-auto transition-all ${showStadePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
+          }`}
       >
-        <div className="bg-gray-300 p-6 rounded-lg mb-6 min-h-[120px] flex items-center justify-center">
+        <div className="mb-15">
+          <HeaderGame score={score} />
+        </div>
+        <div className="relative mb-1 z-10">
+          <Timer onLose={handleLose} reset={resetTimer} />
+        </div>
+        <div className="bg-white/20 backdrop-blur-md p-6 mt-24 rounded-lg mb-6 min-h-[120px] flex items-center justify-center">
           {currentQuestion ? (
-            <span className="text-lg font-bold text-center">
-              {currentQuestion.pregunta}
-            </span>
+            <span className="text-lg font-bold text-center text-white">{currentQuestion.pregunta}</span>
           ) : (
-            <span className="text-lg text-gray-600">Cargando pregunta...</span>
+            <span className="text-lg text-white/70">Cargando pregunta...</span>
           )}
         </div>
-        <div className="space-y-3 mb-8">
+        <div className="flex flex-col gap-4">
           {currentQuestion?.opciones.map((opcion, index) => (
             <button
               key={index}
               onClick={() => handleAnswerSelect(opcion)}
               disabled={showResult}
               className={`w-full p-4 rounded-lg text-left transition-colors
-                ${
-                  showResult
-                    ? opcion === currentQuestion.correcta
-                      ? "bg-green-200"
-                      : opcion === selectedAnswer
-                      ? "bg-red-200"
-                      : "bg-gray-300"
-                    : "bg-gray-300 hover:bg-gray-400"
+                ${showResult
+                  ? opcion === currentQuestion.correcta
+                    ? "bg-green-500 text-white"
+                    : opcion === selectedAnswer
+                      ? "bg-red-500 text-white"
+                      : "bg-white/30 text-white"
+                  : "bg-white/30 hover:bg-white/40 text-white"
                 }`}
             >
               {opcion}
@@ -109,20 +111,21 @@ const GamePage = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-6 left-0 right-0 max-w-md mx-auto px-10">
+      <div className="fixed bottom-6 left-0 right-0 max-w-md mx-auto">
         <FoooterComodin
           currentQuestion={currentQuestion}
           setCurrentQuestion={setCurrentQuestion}
           loadRandomQuestion={loadRandomQuestion}
         />
       </div>
-      {showLosePopUp && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm">
-          <LosePopUp onClose={loadRandomQuestion} />
+      {showStadePopUp && (
+        <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 backdrop-blur-lg">
+          <StadePopUp onClose={loadRandomQuestion} />
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default GamePage;
+export default GamePage
+
