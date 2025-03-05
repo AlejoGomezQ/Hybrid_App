@@ -17,7 +17,7 @@ const PointPage = () => {
 
     // Regresa a la página anterior 
     const handleClick = () => {
-        window.history.back(); 
+        navigate(-1);
     }
 
     // Array de 15 elementos para repetir el componente
