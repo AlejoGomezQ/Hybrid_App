@@ -18,7 +18,7 @@ const HelpPage = () => {
                     >
                         <ArrowLeft className="w-6 h-6 text-white" />
                     </button>
-                    <h1 className="text-3xl font-bold text-white">¿CÓMO JUGAR?</h1>
+                    <h1 className="text-2xl font-bold text-white">¿CÓMO JUGAR?</h1>
                     <div className="w-10"></div>
                 </div>
 

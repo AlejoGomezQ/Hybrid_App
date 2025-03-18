@@ -215,7 +215,7 @@ const GamePage = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-1 left-0 right-0 max-w-md mx-auto">
+      <div className="fixed bottom-1 left-8 right-8 max-w-md mx-auto">
         <FoooterComodin
           currentQuestion={currentQuestion}
           setCurrentQuestion={setCurrentQuestion}

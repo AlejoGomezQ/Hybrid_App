@@ -10,7 +10,7 @@ const Timer = ({ onLose, reset }) => {
 // resetea el tiempo cuando se hace un reinicio de juego
 useEffect(() => {
     if (reset) {
-    setSeconds(30);
+    setSeconds(1000);
     }
 }, [reset]);
 
