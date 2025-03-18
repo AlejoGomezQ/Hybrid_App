@@ -90,6 +90,9 @@ const GamePage = () => {
   const handleAnswerSelect = (answer) => {
     setSelectedAnswer(answer);
     if (answer === currentQuestion.correcta) {
+      // Reset timer immediately when answer is correct
+      setResetTimer(prev => !prev);
+      
       setScore((prevScore) => {
         const newScore = prevScore + 100;
         localStorage.setItem("puntaje", newScore);
