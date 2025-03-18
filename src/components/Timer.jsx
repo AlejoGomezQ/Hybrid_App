@@ -10,7 +10,7 @@ const Timer = ({ onLose, reset }) => {
 // resetea el tiempo cuando se hace un reinicio de juego
 useEffect(() => {
     if (reset) {
-    setSeconds(1000);
+    setSeconds(30);
     }
 }, [reset]);
 
@@ -39,7 +39,7 @@ const getTimerColor = () => {
 };
 
 return (
-    <div className="absolute left-1/2 -translate-x-1/2 -top-6 bg-white/20 backdrop-blur-md rounded-full w-20 h-20 flex items-center justify-center shadow-lg">
+    <div className="absolute left-1/2 -translate-x-1/2 -top-6 bg-white/20 backdrop-blur-md rounded-full w-16 h-16 flex items-center justify-center shadow-lg">
     <div
         className={`font-bold text-2xl ${getTimerColor()} transition-colors duration-300`}
     >
