@@ -232,7 +232,7 @@
             "Módulo que maneja estado y presentación",
             "Pieza reutilizable de código"
           ],
-          "correcta": "Pieza reutilizable de código que renderiza una parte de la interfaz"
+          "correcta": "Pieza reutilizable de código"
         },
         {
           "id": 22,
@@ -243,7 +243,7 @@
             "Mecanismo para reutilizar lógica",
             "Función para conectar con el estado global"
           ],
-          "correcta": "Función que permite usar el estado y otras características de React"
+          "correcta": "Función que permite usar el estado"
         },
         {
           "id": 23,
@@ -254,7 +254,7 @@
             "Propiedad para configurar componentes",
             "Objeto que pasa datos de padre a hijo"
           ],
-          "correcta": "Objeto que pasa datos de un componente padre a un componente hijo"
+          "correcta": "Objeto que pasa datos de padre a hijo"
         },
         {
           "id": 24,
@@ -265,7 +265,7 @@
             "Objeto con datos cambiantes",
             "Propiedad inmutable del componente"
           ],
-          "correcta": "Objeto que contiene datos que pueden cambiar en un componente"
+          "correcta": "Objeto con datos cambiantes"
         },
         {
           "id": 25,
@@ -276,7 +276,7 @@
             "Fases de existencia del componente",
             "Métodos ejecutados en diferentes etapas"
           ],
-          "correcta": "Serie de métodos que se ejecutan en diferentes etapas de un componente"
+          "correcta": "Métodos ejecutados en diferentes etapas"
         },
         {
           "id": 26,
@@ -287,7 +287,7 @@
             "Acción en la interfaz de usuario",
             "Mecanismo para manejar interacciones"
           ],
-          "correcta": "Acción que ocurre en la interfaz de usuario, como un clic o un cambio"
+          "correcta": "Acción en la interfaz de usuario"
         },
         {
           "id": 27,
@@ -298,7 +298,7 @@
             "Componente basado en clases",
             "Componente que extiende Component"
           ],
-          "correcta": "Componente que extiende la clase Component de React"
+          "correcta": "Componente que extiende Component"
         },
         {
           "id": 28,
@@ -309,7 +309,7 @@
             "Componente sin estado",
             "Función de JavaScript"
           ],
-          "correcta": "Componente que es una función de JavaScript"
+          "correcta": "Función de JavaScript"
         },
         {
           "id": 29,
@@ -320,7 +320,7 @@
             "Hook para gestionar estado interno",
             "Método para manejar el estado"
           ],
-          "correcta": "Hook que permite añadir estado a componentes funcionales"
+          "correcta": "Hook para añadir estado"
         },
         {
           "id": 30,
@@ -331,7 +331,7 @@
             "Función para gestionar estados complejos",
             "Hook creado para reutilizar lógica"
           ],
-          "correcta": "Hook creado por el usuario para reutilizar lógica en componentes"
+          "correcta": "Hook creado para reutilizar lógica"
         },
         {
           "id": 31,
@@ -342,7 +342,7 @@
             "Patrón para reutilizar lógica",
             "Función que extiende funcionalidad"
           ],
-          "correcta": "Patrón que permite reutilizar lógica entre componentes"
+          "correcta": "Patrón para reutilizar lógica"
         },
         {
           "id": 32,
@@ -353,7 +353,7 @@
             "Estrategia para inyectar lógica de presentación",
             "Patrón para pasar una función como prop"
           ],
-          "correcta": "Patrón que permite pasar una función como prop para renderizar contenido"
+          "correcta": "Patrón para pasar una función como prop"
         },
         {
           "id": 33,
@@ -364,7 +364,7 @@
             "Componente con valor de input controlado por React",
             "Componente que maneja su estado a través de props"
           ],
-          "correcta": "Componente en el que el valor del input es controlado por React"
+          "correcta": "Componente con valor de input controlado por React"
         },
         {
           "id": 34,
@@ -375,7 +375,7 @@
             "Componente sin estado que depende de props",
             "Componente con estado interno sin props"
           ],
-          "correcta": "Componente que maneja su propio estado internamente sin necesidad de props"
+          "correcta": "Componente con estado interno sin props"
         },
         {
           "id": 35,
@@ -386,7 +386,62 @@
             "Componente enfocado en apariencia",
             "Componente dedicado al renderizado visual"
           ],
-          "correcta": "Componente se enfoca en la apariencia y no en la lógica"
+          "correcta": "Componente enfocado en apariencia"
+        },
+        {
+          "id": 36,
+          "pregunta": "¿Qué es un componente contenedor en React?",
+          "opciones": [
+            "Componente que maneja la lógica de negocio",
+            "Componente que contiene otros componentes",
+            "Componente que gestiona el estado",
+            "Componente que maneja datos y lógica"
+          ],
+          "correcta": "Componente que maneja datos y lógica"
+        },
+        {
+          "id": 37,
+          "pregunta": "¿Qué es un hook de efecto en React?",
+          "opciones": [
+            "Función para realizar efectos secundarios",
+            "Hook para manejar efectos colaterales",
+            "Hook para ejecutar efectos secundarios",
+            "Función para gestionar efectos"
+          ],
+          "correcta": "Hook para ejecutar efectos secundarios"
+        },
+        {
+          "id": 38,
+          "pregunta": "¿Qué es un hook de contexto en React?",
+          "opciones": [
+            "Hook para acceder al contexto",
+            "Función para manejar el contexto",
+            "Hook para compartir estado global",
+            "Función para gestionar el contexto"
+          ],
+          "correcta": "Hook para acceder al contexto"
+        },
+        {
+          "id": 39,
+          "pregunta": "¿Qué es un hook de referencia en React?",
+          "opciones": [
+            "Hook para crear referencias",
+            "Función para manejar referencias",
+            "Hook para acceder a elementos DOM",
+            "Función para gestionar referencias"
+          ],
+          "correcta": "Hook para acceder a elementos DOM"
+        },
+        {
+          "id": 40,
+          "pregunta": "¿Qué es un hook de reducción en React?",
+          "opciones": [
+            "Hook para manejar estado complejo",
+            "Función para gestionar estados complejos",
+            "Hook para reducir estados",
+            "Función para manejar lógica de reducción"
+          ],
+          "correcta": "Hook para manejar estado complejo"
         }
             ]
           },
@@ -810,6 +865,28 @@
             "Regula el uso de software"
           ],
           "correcta": "Gestiona y distribuye permisos de uso"
+        },
+        {
+          "id": 39,
+          "pregunta": "¿Qué es un servidor de impresión?",
+          "opciones": [
+            "Administra y distribuye trabajos de impresión",
+            "Gestiona y distribuye impresiones",
+            "Controla la impresión de documentos",
+            "Facilita la impresión de documentos"
+          ],
+          "correcta": "Administra y distribuye trabajos de impresión"
+        },
+        {
+          "id": 40,
+          "pregunta": "¿Qué es un servidor de archivos?",
+          "opciones": [
+            "Almacena y distribuye archivos en red",
+            "Administra y comparte archivos",
+            "Gestiona y distribuye archivos",
+            "Facilita el almacenamiento y acceso a archivos"
+          ],
+          "correcta": "Almacena y distribuye archivos en red"
         }
       ]
     },
@@ -1678,7 +1755,29 @@
             "Simular identidad para burlar la seguridad"
           ],
           "correcta": "Fingir ser otra persona o sistema"
-        }
+        },
+        {
+          "id": 39,
+          "pregunta": "¿Qué es un ataque de sniffing?",
+          "opciones": [
+            "Interceptar y leer datos de una red",
+            "Capturar y analizar tráfico de red",
+            "Observar y registrar información transmitida",
+            "Monitorear el flujo de datos en una red"
+          ],
+          "correcta": "Interceptar y leer datos de una red"
+        },
+        {
+          "id": 40,
+          "pregunta": "¿Qué es un ataque de inyección de SQL?",
+          "opciones": [
+            "Insertar código malicioso en una consulta SQL",
+            "Introducir instrucciones dañinas en SQL",
+            "Inyectar comandos maliciosos en consultas",
+            "Colocar código no autorizado en una consulta"
+          ],
+          "correcta": "Insertar código malicioso en una consulta SQL"
+        }    
       ]
     },
     {
