@@ -52,3 +52,6 @@ pnpm dev
 ```
 http://localhost:5173
 ```
+
+## Diseño
+URL: https://www.figma.com/design/4HXAPPYoCclWBpubTzWK7p/APP-MOVIL-2?node-id=0-1&p=f&t=vAdYa9M2eVKF7yF5-0
