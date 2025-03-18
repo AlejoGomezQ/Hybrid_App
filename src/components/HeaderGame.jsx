@@ -6,6 +6,12 @@ const HeaderGame = () => {
     const navigate = useNavigate()
 
     const handleClick = () => {
+        localStorage.removeItem("timerSeconds")
+        localStorage.removeItem("puntaje")
+        localStorage.removeItem("comodinUsado")
+        localStorage.removeItem("comodinCambioUsado")
+        localStorage.removeItem("comodinRespuestaUsado")
+        localStorage.removeItem("currentQuestion")
         navigate("/game-modes")
     }
 
