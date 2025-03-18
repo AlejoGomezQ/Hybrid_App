@@ -1211,7 +1211,7 @@
       ]
     },
     {
-      "nombre": "Seguridad informática",
+      "nombre": "Seguridad",
       "preguntas": [
         {
           "id": 1,
@@ -1656,7 +1656,7 @@
       ]
     },
     {
-      "nombre": "Inteligencia artificial",
+      "nombre": "IA",
       "preguntas": [
         {
           "id": 1,

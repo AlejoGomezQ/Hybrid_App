@@ -168,13 +168,13 @@ const GamePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-4 font-sans">
+    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 p-10 font-sans">
       <div
         className={`relative max-w-md mx-auto transition-all ${
           showStatePopUp ? "opacity-20 pointer-events-none" : "opacity-100"
         }`}
       >
-        <div className="mb-15">
+        <div className="mb-10">
           <HeaderGame score={score} />
         </div>
         <div className="relative mb-1 z-10">
@@ -184,7 +184,7 @@ const GamePage = () => {
             maintainCurrentState={maintainCurrentState}
           />
         </div>
-        <div className="bg-white/20 backdrop-blur-md p-6 mt-24 rounded-lg mb-6 min-h-[120px] flex items-center justify-center">
+        <div className="bg-white/20 backdrop-blur-md p-2 mt-18 rounded-lg mb-4 min-h-[110px] flex items-center justify-center">
           {currentQuestion ? (
             <span className="text-lg font-bold text-center text-white">
               {currentQuestion.pregunta}
@@ -199,7 +199,7 @@ const GamePage = () => {
               key={index}
               onClick={() => handleAnswerSelect(opcion)}
               disabled={showResult}
-              className={`w-full p-4 rounded-lg text-left transition-colors ${
+              className={`w-full p-3 rounded-lg text-left transition-colors ${
                 showResult
                   ? opcion === currentQuestion.correcta
                     ? "bg-green-500 text-white"
@@ -215,7 +215,7 @@ const GamePage = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-6 left-0 right-0 max-w-md mx-auto">
+      <div className="fixed bottom-1 left-0 right-0 max-w-md mx-auto">
         <FoooterComodin
           currentQuestion={currentQuestion}
           setCurrentQuestion={setCurrentQuestion}

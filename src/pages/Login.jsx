@@ -31,7 +31,7 @@ const handleChange = (e) => {
 };
 
 return (
-    <section className="p-4 h-screen bg-gradient-to-br from-purple-600 to-blue-500 font-sans">
+    <section className="p-10 h-screen bg-gradient-to-br from-purple-600 to-blue-500 font-sans">
     <div className="bg-white/20 h-full rounded-lg max-w-md mx-auto px-6 py-10 flex flex-col items-center justify-around space-y-6 shadow-lg">
         <div className="text-center space-y-4">
         <figure className="flex justify-center relative items-center">

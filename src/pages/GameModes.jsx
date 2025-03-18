@@ -27,9 +27,9 @@ const GameModesPage = () => {
                 return <IconPython />
             case "Bases de datos":
                 return <IconSQL />
-            case "Seguridad informática":
+            case "Seguridad":
                 return <IconSeguridad />
-            case "Inteligencia artificial":
+            case "IA":
                 return <IconIA />
             default:
                 return null
@@ -38,11 +38,11 @@ const GameModesPage = () => {
 
     return (
         <div className="h-screen bg-gradient-to-br from-purple-600 to-blue-500 font-sans flex flex-col overflow-hidden">
-            <div className="flex-1 flex flex-col p-4">
+            <div className="flex-1 flex flex-col p-10">
                 <div className="max-w-md mx-auto w-full h-full flex flex-col bg-white/20 rounded-lg shadow-lg p-6 overflow-hidden">
                     <HeaderGameMode />
                     <h1 className="mb-6 text-2xl font-bold text-center text-white">Elige una categoria</h1>
-                    <div className="flex-1 flex flex-col gap-y-5 overflow-y-hidden">
+                    <div className="flex-1 flex flex-col overflow-y-hidden">
                         {categories.map((category) => (
                             <TopicButton key={category.nombre} icon={getIconForCategory(category.nombre)} name={category.nombre} />
                         ))}
